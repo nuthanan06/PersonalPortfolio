@@ -1401,9 +1401,9 @@ video {
 @font-face {
   font-family: 'Satoshi-Variable';
 
-  src: url('/fonts/Satoshi-Variable.woff2') format('woff2'),
-         url('/fonts/Satoshi-Variable.woff') format('woff'),
-         url('/fonts/Satoshi-Variable.ttf') format('truetype');
+  src: url('/nuthanan/fonts/Satoshi-Variable.woff2') format('woff2'),
+         url('/nuthanan/fonts/Satoshi-Variable.woff') format('woff'),
+         url('/nuthanan/fonts/Satoshi-Variable.ttf') format('truetype');
 
   font-weight: 300 900;
 
