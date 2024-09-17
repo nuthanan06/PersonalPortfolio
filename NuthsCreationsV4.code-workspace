@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "NuthsCreationsV4",
+			"path": "."
+		},
+		{
+			"name": "gsap",
+			"path": "node_modules/gsap"
+		}
+	],
+	"settings": {}
+}
