@@ -334,7 +334,7 @@ communityCreator.addEventListener(
         document.getElementById("title").innerHTML = "Community Creator";
         document.getElementById("languages").innerHTML= "OpenAI, React, CSS";
         document.getElementById("description").innerHTML="Developed an interactive platform that provides users with AI-powered feedback to improve their community's sustainable practices. Users answer multiple choice questions and receive actionable suggestions to help create a more sustainable environment.";
-        var imageSrc = '/images/communitycreatorlaptop.png';
+        var imageSrc = './images/communitycreatorlaptop.png';
         document.getElementById('images').src = imageSrc;
 
         document.getElementById('images').classList.remove("invisible");
@@ -361,7 +361,7 @@ cancerResearch.addEventListener(
         document.getElementById("title").innerHTML = "AI Skin Cancer Detection";
         document.getElementById("languages").innerHTML= "PyTorch";
         document.getElementById("description").innerHTML="Programmed  a convolutional neural network (CNN) model with the Skin Cancer MNIST: HAM10000 dataset  using PyTorch to effectively identify different skin lesion types. Fine-tuned ResNet50 and DenseNet121 models, integrating the custom CNN, and subsequently comparing the performance results between the two models. Achieved a 74% accuracy using the ResNet50 model." 
-        var imageSrc = '/images/skincancerdetection.png';
+        var imageSrc = './images/skincancerdetection.png';
         document.getElementById('images').src = imageSrc;
 
         document.getElementById('images').classList.remove("invisible");
@@ -393,7 +393,7 @@ cancerResearch.addEventListener(
         document.getElementById("languages").innerHTML= "HTML, Tailwind.css, Javascript, GSAP, Anime.js";
         document.getElementById("description").innerHTML="Developed a platform to highlight my interests and showcase projects from the past four years. Applied UI/UX principles to design a functional and engaging website incorporating animations and cursor-related effects to elevate user experience." 
 
-        var imageSrc = '/images/personalportfolio.png';
+        var imageSrc = './images/personalportfolio.png';
         document.getElementById('images').src = imageSrc;
 
         document.getElementById('images').classList.remove("invisible");
@@ -490,7 +490,7 @@ blenderModelling.addEventListener (
         document.getElementById("title").innerHTML = "Mathematical Analysis of Sustainable Architecture";
         document.getElementById("languages").innerHTML= "Blender";
         document.getElementById("description").innerHTML="Designed and modeled a sustainable community using Blender, and analyzed the role that mathematical principles play in architecture and sustainable development."; 
-        var imageSrc = '/images/mathematicalmodelling.png';
+        var imageSrc = './images/mathematicalmodelling.png';
         document.getElementById('images').src = imageSrc;
 
         document.getElementById('images').classList.remove("invisible");
@@ -518,7 +518,7 @@ cross.addEventListener(
     });
 
 
-////images/communitycreatorlaptop.png
+///./images/communitycreatorlaptop.png
 
 
 
