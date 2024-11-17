@@ -810,26 +810,6 @@ video {
   top: 50%;
 }
 
-.top-\[-50vw\]{
-  top: -50vw;
-}
-
-.top-\[50vw\]{
-  top: 50vw;
-}
-
-.top-\[-25vw\]{
-  top: -25vw;
-}
-
-.top-\[-35vw\]{
-  top: -35vw;
-}
-
-.left-\[40vw\]{
-  left: 40vw;
-}
-
 .z-10{
   z-index: 10;
 }
@@ -878,6 +858,10 @@ video {
 
 .ml-\[5vw\]{
   margin-left: 5vw;
+}
+
+.ml-\[6vw\]{
+  margin-left: 6vw;
 }
 
 .mr-10{
@@ -940,28 +924,16 @@ video {
   margin-top: 10vh;
 }
 
+.mt-\[10vw\]{
+  margin-top: 10vw;
+}
+
 .mt-\[6vh\]{
   margin-top: 6vh;
 }
 
 .mt-\[7vw\]{
   margin-top: 7vw;
-}
-
-.mt-\[20vw\]{
-  margin-top: 20vw;
-}
-
-.mt-\[15vw\]{
-  margin-top: 15vw;
-}
-
-.ml-\[6vw\]{
-  margin-left: 6vw;
-}
-
-.mt-\[10vw\]{
-  margin-top: 10vw;
 }
 
 .block{
@@ -1004,6 +976,10 @@ video {
   height: 40vh;
 }
 
+.h-\[50px\]{
+  height: 50px;
+}
+
 .h-\[50vh\]{
   height: 50vh;
 }
@@ -1022,18 +998,6 @@ video {
 
 .h-\[80px\]{
   height: 80px;
-}
-
-.h-\[50vw\]{
-  height: 50vw;
-}
-
-.h-\[50px\]{
-  height: 50px;
-}
-
-.h-\[30px\]{
-  height: 30px;
 }
 
 .h-\[80vh\]{
@@ -1146,10 +1110,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[50vw\]{
-  width: 50vw;
 }
 
 .flex-\[1\]{
@@ -1318,6 +1278,10 @@ video {
   font-size: 25px;
 }
 
+.text-\[30px\]{
+  font-size: 30px;
+}
+
 .text-\[35px\]{
   font-size: 35px;
 }
@@ -1336,10 +1300,6 @@ video {
 
 .text-\[80px\]{
   font-size: 80px;
-}
-
-.text-\[30px\]{
-  font-size: 30px;
 }
 
 .font-bold{
@@ -1401,9 +1361,9 @@ video {
 @font-face {
   font-family: 'Satoshi-Variable';
 
-  src: url('/nuthanan/fonts/Satoshi-Variable.woff2') format('woff2'),
-         url('/nuthanan/fonts/Satoshi-Variable.woff') format('woff'),
-         url('/nuthanan/fonts/Satoshi-Variable.ttf') format('truetype');
+  src: url('./fonts/Satoshi-Variable.woff2') format('woff2'),
+         url('./fonts/Satoshi-Variable.woff') format('woff'),
+         url('./fonts/Satoshi-Variable.ttf') format('truetype');
 
   font-weight: 300 900;
 
@@ -1429,10 +1389,6 @@ video {
     border-radius: 30px;
     background-color: #A29CDF;
   }
-}
-
-.first-letter\:basis-auto::first-letter{
-  flex-basis: auto;
 }
 
 @media (min-width: 400px) and (max-width: 859px){

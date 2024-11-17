@@ -2,7 +2,7 @@
 module.exports = {
   mode: 'jit',
   purge: [
-    './dist/**/*.html',
+    './**/*.html',
     './src/**/*.{js,jsx,ts,tsx,vue}',
   ],
 
