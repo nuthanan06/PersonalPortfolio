@@ -225,9 +225,6 @@
     
     .aboveProjectButton > .projectButton:hover::before {
         opacity: 1;
-    }
-    
-
-    
+    }  
 }
 

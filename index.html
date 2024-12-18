@@ -26,7 +26,7 @@
                     </svg>
                 </h1>
             </div>
-            <nav>
+            <nav class="sm:flex sm:justify-center">
                 <ul class="sm:clear-both sm:justify-center md:clear-none md:float-right text-white flex flex-row md:justify-end gap-x-16 font-santoshi text-2xl h-16 sm:mt-2 md:my-12 mx-10"> 
                     <a href="https://www.linkedin.com/in/nuthanan-tharmarajah/">
                         <li class = "opacity-50 basis-auto">  Linkedin </li>
@@ -34,7 +34,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="clear-both mt-16 mainSection w-full flex flex-col justify-center pl-12 bg-[radial-gradient(58.31%_58.31%_at_50%_50%,rgba(162,156,223,0.383)_0%,rgba(162,156,223,0)_80%,rgba(162,156,223,0)_100%)]">
+        <div class="clear-both mt-16 min-h-[70vh] sm:min-h-[40vh] w-full flex flex-col justify-center pl-12 bg-[radial-gradient(58.31%_58.31%_at_50%_50%,rgba(162,156,223,0.383)_0%,rgba(162,156,223,0)_80%,rgba(162,156,223,0)_100%)]">
             <div class="name-container font-santoshi text-white text-[10vw] font-extrabold w-full">
                 <div class="relative h-[10vw] w-1/2 nuthanan-container flex justify-end">
                     <div id="#n">n</div>
@@ -62,25 +62,6 @@
                         <div id="#hOverlap"> h</div>    
                     </div>
                     <div id="#a3">a</div>
-                    <div class="mt-[7vw] ml-[15vw] absolute clip-container-icon h-[20vw] w-[10vw]"> 
-                        <svg id="icon3" class="absolute" width="20vw" height="40vw" viewBox="0 0 20vw 40vw" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <clipPath id="path-1-inside-1_168_22" fill="white">
-                                <path id="pathAnimation" fill-rule="evenodd" clip-rule="evenodd" d="M52 0H23.2632L0 60H14.799L2.24419 99.9757L20.4933 78.5L52.5925 43.7186L35.4329 42.7297L52 0Z"/>
-                            </clipPath>
-                            <path id="pathAnimation" stroke="#A29CDF" stroke-width="4" d="M23.2632 0V-2H21.8935L21.3984 -0.722998L23.2632 0ZM52 0L53.8647 0.722998L54.9205 -2L52 -2V0ZM0 60L-1.86475 59.277L-2.9205 62H0V60ZM14.799 60L16.7071 60.5993L17.5234 58H14.799V60ZM2.24419 99.9757L0.336084 99.3764L3.76825 101.271L2.24419 99.9757ZM20.4933 78.5L19.0236 77.1436L18.9958 77.1737L18.9693 77.2049L20.4933 78.5ZM52.5925 43.7186L54.0623 45.075L56.9321 41.9654L52.7076 41.7219L52.5925 43.7186ZM35.4329 42.7297L33.5681 42.0067L32.5749 44.5683L35.3178 44.7264L35.4329 42.7297ZM23.2632 2H52V-2H23.2632V2ZM1.86475 60.723L25.1279 0.722998L21.3984 -0.722998L-1.86475 59.277L1.86475 60.723ZM14.799 58H0V62H14.799V58ZM4.1523 100.575L16.7071 60.5993L12.8909 59.4007L0.336084 99.3764L4.1523 100.575ZM18.9693 77.2049L0.720133 98.6806L3.76825 101.271L22.0174 79.7951L18.9693 77.2049ZM51.1228 42.3622L19.0236 77.1436L21.9631 79.8564L54.0623 45.075L51.1228 42.3622ZM35.3178 44.7264L52.4774 45.7153L52.7076 41.7219L35.5479 40.733L35.3178 44.7264ZM50.1353 -0.722998L33.5681 42.0067L37.2976 43.4527L53.8647 0.722998L50.1353 -0.722998Z"  mask="url(#path-1-inside-1_168_22)"/>
-                        </svg>
-                        <div class="absolute h-[20vw] w-[10vw] bg-primary-purple" id="icon3Filler"></div>
-                    </div>
-                    <script>
-                        anime({
-                            targets: '#pathAnimation',
-                            strokeDashoffset: [anime.setDashoffset, 0],
-                            easing: 'easeInOutSine',
-                            duration: 5000,
-                            delay: function(el, i) { return i * 250 },
-                            direction: 'forward',
-                        });
-                    </script>
                     <div id="r">r</div>
                     <div class = "clip-m"> 
                         <div id="#m">m</div>
@@ -101,12 +82,12 @@
             </div>  
             <br> 
             <br>                 
-            <div class="font-santoshi text-white text-4xl italic"> Mechatronics & AI Enthusiast </div>
+            <div class="font-santoshi text-white text-4xl italic sm:text-2xl"> Mechatronics & AI Enthusiast </div>
         </div>
         <div class="ml-10 block mt-6 min-h-[65vh]">
             <!-- About Me Section -->
-            <div class="sm:w-[100%] md:w-[45%] md:float-left">     
-                <h2 class="text-shadow sm:text-center sm:w-[80vw] font-santoshi text-primary-purple aboutMeSize text-[80px] font-extrabold"> About Me
+            <div class="sm:text-center md:w-[45%] md:float-left">     
+                <h2 class="text-shadow sm:text-center sm:w-[80vw] sm:m-auto font-santoshi text-primary-purple aboutMeSize text-[80px] font-extrabold"> About Me
                     <div class="relative md:line"> 
                         <div class="dotStuff"> 
                             <div class="md:dot"> </div>
@@ -115,60 +96,59 @@
                         </div>
                     </div>
                 </h2>
-                <p class="block left-[-161px] sm:w-[100%] text-shadow-no aboutMeParagraph md:leading-normal lg:leading-normal mt-6 w-[120%] font-santoshi font-thin text-white lg:text-3xl text-2xl">
+                <p class="block left-[-161px] sm:left-[-161px] sm:w-[80vw] sm:m-auto text-shadow-no aboutMeParagraph md:leading-normal lg:leading-normal mt-6 w-[120%] font-santoshi font-thin text-white lg:text-3xl text-2xl">
                     I'm currently and avid mechatronics engineer and data science enthusiast who integrates passions for engineering with global affairs and sustainable development. <br><br> If you don't see me working or studying, I'm probably at the gym, playing volleyball, biking or travelling. <br><br> Mechatronics Engineering @ University of Waterloo
                 </p>
             </div>
         
             <!-- Circles Section -->
-            <div class="w-full md:w-[45%] md:float-right sm:mt-7">
+            <div class="w-full md:w-[45%] sm:w-[90vw] sm:m-auto md:float-right sm:mt-7">
                 <div class="clear-both"></div>
                 <div class="relative circleExperience"> 
                     <div class="circle">   
                         <div class="lineConnection"></div>                      
                         <p class="relative text-shadow text-primary-purple font-bold font-santoshi xl:text-[40px] md:text-[20px] lg:text-[30px] sm:text-[30px] sm:w-[100vw] w-[45vw] ml-24"> President of CS Club @ Maple High </p>
                         <p class="text-white italic ml-24 w-[45vw] font-santoshi"> September 2021 - June 2024 </p>              
-                        <p class="text-white mt-4 ml-24 w-[30vw] sm:w-[80vw] lg:w-[35vw] lg:text-[20px] md:text-[17px] sm:text-[20px] font-santoshi"> Taught HTML, CSS, JavaScript, Blender, Python, C# to 30+ students and prepared students for upcoming coding contests and enhancing their technical skills and confidence. </p>
+                        <p class="text-white mt-4 ml-24 w-[30vw] sm:w-[70vw] lg:w-[35vw] lg:text-[20px] md:text-[17px] sm:text-[20px] font-santoshi"> Taught HTML, CSS, JavaScript, Blender, Python, C# to 30+ students and prepared students for upcoming coding contests and enhancing their technical skills and confidence. </p>
                     </div>
                     <div class="circle"> 
                         <div class="lineConnection"></div>                      
                         <p class="relative text-shadow text-primary-purple font-bold font-santoshi xl:text-[40px] md:text-[20px] lg:text-[30px] sm:text-[30px] sm:w-[100vw] md:w-[45vw] pl-24"> YRHacks Outreach Executive </p>
                         <p class="text-white italic pl-24 w-[45vw] font-santoshi"> June 2022 - April 2024 </p>              
-                        <p class="text-white mt-4 ml-24 w-[30vw]  sm:w-[80vw] lg:w-[35vw] lg:text-[20px] md:text-[17px] sm:text-[20px] font-santoshi"> Worked with other YRDSB students to organize a 24-hour hackathon for 300+ students by collaborating with sponsors and community partners. </p>
+                        <p class="text-white mt-4 ml-24 w-[30vw] sm:w-[70vw] lg:w-[35vw] lg:text-[20px] md:text-[17px] sm:text-[20px] font-santoshi"> Worked with other YRDSB students to organize a 24-hour hackathon for 300+ students by collaborating with sponsors and community partners. </p>
                     </div>
                     <div class="circle">
                         <p class="relative text-shadow text-primary-purple font-bold font-santoshi xl:text-[40px] md:text-[20px] lg:text-[30px] sm:text-[30px] sm:w-[100vw] md:w-[45vw] pl-24"> CANMUN Chief of Staff </p>
                         <p class="text-white italic pl-24 w-[45vw] font-santoshi"> December 2022 - June 2024 </p>              
-                        <p class="text-white mt-4 ml-24 w-[30vw] sm:w-[80vw] lg:w-[35vw] lg:text-[20px] md:text-[17px] sm:text-[20px] font-santoshi"> Led 70+ staff and coordinated a 500+ international level student conference, strengthening project management and team leadership, while ensuring a successful, well-organized event. </p>
+                        <p class="text-white mt-4 ml-24 w-[30vw] sm:w-[70vw] lg:w-[35vw] lg:text-[20px] md:text-[17px] sm:text-[20px] font-santoshi"> Led 70+ staff and coordinated a 500+ international level student conference, strengthening project management and team leadership, while ensuring a successful, well-organized event. </p>
                     </div>
                 </div>
             </div>
         </div>        
-        <div class="block sm:mt-[20vw] md:mt-[10vw] min-h-[50vh] w-[100%]"> 
+        <div class="block sm:mt-[40vw] md:mt-[10vw] min-h-[40vh] w-[100%]"> 
             <h2 class="relative text-shadow font-santoshi text-primary-purple text-[80px] font-extrabold left-[5%]"> Skills </h2>
             <div class="flex flex-wrap justify-center gap-10 pt-3">
-                <div class="skillBox rounded-[67px] w-[550px] h-[550px] border-primary-purple border-4">
-                    <p class="relative transparency font-poppins w-[250px] text-[40px] font-semibold text-primary-purple mt-14 ml-10"> Front-End Development </p>
-                    <p class= "relative w-[400px] font-light text-[25px] ml-10 text-white font-poppins"> Worked with HTML, CSS and JavaScript, including packages such as React and next.js. </p>
+                <div class="skillBox rounded-[67px] w-[550px] h-[550px] sm:w-[300px] sm:h-[300px] border-primary-purple border-4">
+                    <p class="relative transparency font-poppins w-[250px] sm:w-[150px] sm:text-[20px] text-[40px] font-semibold text-primary-purple mt-14 ml-10"> Front-End Development </p>
+                    <p class= "relative w-[400px] font-light text-[25px] sm:w-[200px] sm:text-[15px] ml-10 text-white font-poppins"> Worked with HTML, CSS and JavaScript, including packages such as React and next.js. </p>
                     <div class="relative shadow"></div>
-                    <div class="relative flex gap-4 w-[300px] float-right top-[-50px]">
-                        <div class="relative rounded-[47px] w-[80px] h-[80px] backgroundCircles"></div>
-                        <div class="relative rounded-[47px] w-[80px] h-[80px] backgroundCircles"></div>
-                        <div class="relative rounded-[47px] w-[80px] h-[80px] backgroundCircles"></div>
+                    <div class="relative flex gap-4 sm:gap-3 w-[300px] float-right top-[-50px] sm:top-[-160px] sm:left-[150px]">
+                        <div class="relative rounded-[47px] sm:w-[30px] sm:h-[30px] w-[80px] h-[80px] backgroundCircles"></div>
+                        <div class="relative rounded-[47px] sm:w-[30px] sm:h-[30px] w-[80px] h-[80px] backgroundCircles"></div>
+                        <div class="relative rounded-[47px] sm:w-[30px] sm:h-[30px] w-[80px] h-[80px] backgroundCircles"></div>
 
                     </div>
                 </div>
-                <div class="skillBox rounded-[67px] w-[550px] h-[550px] border-primary-purple border-4">
-                    <p class="relative transparency font-poppins w-[250px] text-[40px] font-semibold text-primary-purple mt-14 ml-10"> Machine Learning </p>
-                    <p class= "relative w-[400px] font-light text-[25px] ml-10 text-white font-poppins"> Used TensorFlow and OpenCV. Built neural networks for classification tasks. </p>
+                <div class="sm:w-[300px] sm:h-[300px] skillBox rounded-[67px] w-[550px] h-[550px] border-primary-purple border-4">
+                    <p class="relative transparency font-poppins w-[250px] text-[40px] sm:w-[150px] sm:text-[20px] font-semibold text-primary-purple mt-14 ml-10"> Machine Learning </p>
+                    <p class= "relative w-[400px] font-light text-[25px] sm:w-[200px] sm:text-[15px] ml-10 text-white font-poppins"> Used TensorFlow and OpenCV. Built neural networks for classification tasks. </p>
                     <div class="relative shadow"></div>
                     <div class="relative left-[400px] top-[-50px] rounded-[47px] w-[80px] h-[80px] backgroundCircles"></div>
                 </div>
-                <div class="skillBox rounded-[67px] w-[550px] h-[550px] border-primary-purple border-4">
-                    <p class="relative transparency font-poppins w-[250px] text-[40px] font-semibold text-primary-purple mt-14 ml-10"> Hardware & Robotics </p>
-                    <p class= "relative w-[400px] font-light text-[25px] ml-10 text-white font-poppins"> Worked with Arduino to build numerous projects applicable in the real world.  </p>
+                <div class="skillBox rounded-[67px] w-[550px] h-[550px] sm:w-[300px] sm:h-[300px] border-primary-purple border-4">
+                    <p class="relative transparency font-poppins w-[250px] text-[40px] sm:w-[150px] sm:text-[20px] font-semibold text-primary-purple mt-14 ml-10"> Hardware & Robotics </p>
+                    <p class= "relative w-[400px] font-light text-[25px] sm:w-[200px] sm:text-[15px] ml-10 text-white font-poppins"> Worked with Arduino to build numerous projects applicable in the real world.  </p>
                     <div class="relative shadow"></div>
-                    <div class="relative left-[400px] top-[-50px] rounded-[47px] w-[80px] h-[80px] backgroundCircles"></div>
                 </div>
             </div>   
         </div> 
