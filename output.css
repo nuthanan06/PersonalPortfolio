@@ -560,9 +560,15 @@ video {
   width: 100%;
 }
 
-@media (min-width: 400px){
+@media (min-width: 300px){
   .container{
-    max-width: 400px;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 690px){
+  .container{
+    max-width: 690px;
   }
 }
 
@@ -592,7 +598,6 @@ video {
 
 .aboutMeSize {
   top: 10.3%;
-  left: 10%;
   width: 45vw;
   font-size: 70px;
 }
@@ -955,10 +960,6 @@ video {
   height: 33.33333vh;
 }
 
-.h-\[400px\]{
-  height: 400px;
-}
-
 .h-\[40vh\]{
   height: 40vh;
 }
@@ -991,20 +992,8 @@ video {
   height: 80vh;
 }
 
-.max-h-\[50vh\]{
-  max-height: 50vh;
-}
-
-.max-h-\[100vh\]{
-  max-height: 100vh;
-}
-
-.max-h-\[120vh\]{
-  max-height: 120vh;
-}
-
-.max-h-\[130vh\]{
-  max-height: 130vh;
+.min-h-\[40vh\]{
+  min-height: 40vh;
 }
 
 .min-h-\[50vh\]{
@@ -1017,10 +1006,6 @@ video {
 
 .min-h-\[70vh\]{
   min-height: 70vh;
-}
-
-.min-h-\[40vh\]{
-  min-height: 40vh;
 }
 
 .w-1\/2{
@@ -1061,10 +1046,6 @@ video {
 
 .w-\[250px\]{
   width: 250px;
-}
-
-.w-\[300px\]{
-  width: 300px;
 }
 
 .w-\[30vw\]{
@@ -1165,10 +1146,6 @@ video {
 
 .gap-10{
   gap: 2.5rem;
-}
-
-.gap-4{
-  gap: 1rem;
 }
 
 .gap-5{
@@ -1398,29 +1375,9 @@ video {
   }
 }
 
-@media (min-width: 400px) and (max-width: 859px){
-  .sm\:left-0{
-    left: 0px;
-  }
-
-  .sm\:left-\[0px\]{
-    left: 0px;
-  }
-
-  .sm\:left-\[150px\]{
-    left: 150px;
-  }
-
-  .sm\:top-\[-160px\]{
-    top: -160px;
-  }
-
+@media (min-width: 690px) and (max-width: 859px){
   .sm\:left-\[-161px\]{
     left: -161px;
-  }
-
-  .sm\:clear-both{
-    clear: both;
   }
 
   .sm\:m-auto{
@@ -1435,12 +1392,8 @@ video {
     margin-top: 1.75rem;
   }
 
-  .sm\:mt-\[20vw\]{
-    margin-top: 20vw;
-  }
-
-  .sm\:mt-\[40vw\]{
-    margin-top: 40vw;
+  .sm\:mt-\[15vw\]{
+    margin-top: 15vw;
   }
 
   .sm\:flex{
@@ -1451,20 +1404,8 @@ video {
     height: 300px;
   }
 
-  .sm\:h-\[30px\]{
-    height: 30px;
-  }
-
   .sm\:min-h-\[40vh\]{
     min-height: 40vh;
-  }
-
-  .sm\:min-h-\[50vh\]{
-    min-height: 50vh;
-  }
-
-  .sm\:min-h-\[0vh\]{
-    min-height: 0vh;
   }
 
   .sm\:w-\[100\%\]{
@@ -1487,10 +1428,6 @@ video {
     width: 300px;
   }
 
-  .sm\:w-\[30px\]{
-    width: 30px;
-  }
-
   .sm\:w-\[70vw\]{
     width: 70vw;
   }
@@ -1503,20 +1440,8 @@ video {
     width: 90vw;
   }
 
-  .sm\:w-\[800vw\]{
-    width: 800vw;
-  }
-
-  .sm\:w-\[0vw\]{
-    width: 0vw;
-  }
-
   .sm\:justify-center{
     justify-content: center;
-  }
-
-  .sm\:gap-3{
-    gap: 0.75rem;
   }
 
   .sm\:text-center{
@@ -1542,8 +1467,8 @@ video {
 }
 
 @media (min-width: 860px){
-  .md\:left-\[-161px\]{
-    left: -161px;
+  .md\:left-\[100\%\]{
+    left: 100%;
   }
 
   .md\:float-right{
@@ -1569,6 +1494,10 @@ video {
 
   .md\:mt-\[10vw\]{
     margin-top: 10vw;
+  }
+
+  .md\:ml-10{
+    margin-left: 2.5rem;
   }
 
   .md\:w-\[45\%\]{
@@ -1622,6 +1551,125 @@ video {
 @media (min-width: 1700px){
   .xl\:text-\[40px\]{
     font-size: 40px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 690px){
+  .mini\:left-\[-161px\]{
+    left: -161px;
+  }
+
+  .mini\:left-\[0px\]{
+    left: 0px;
+  }
+
+  .mini\:float-right{
+    float: right;
+  }
+
+  .mini\:clear-both{
+    clear: both;
+  }
+
+  .mini\:m-auto{
+    margin: auto;
+  }
+
+  .mini\:mt-2{
+    margin-top: 0.5rem;
+  }
+
+  .mini\:mt-7{
+    margin-top: 1.75rem;
+  }
+
+  .mini\:mt-\[15vh\]{
+    margin-top: 15vh;
+  }
+
+  .mini\:ml-\[0px\]{
+    margin-left: 0px;
+  }
+
+  .mini\:ml-0{
+    margin-left: 0px;
+  }
+
+  .mini\:flex{
+    display: flex;
+  }
+
+  .mini\:h-\[300px\]{
+    height: 300px;
+  }
+
+  .mini\:min-h-\[40vh\]{
+    min-height: 40vh;
+  }
+
+  .mini\:w-\[100\%\]{
+    width: 100%;
+  }
+
+  .mini\:w-\[100vw\]{
+    width: 100vw;
+  }
+
+  .mini\:w-\[150px\]{
+    width: 150px;
+  }
+
+  .mini\:w-\[200px\]{
+    width: 200px;
+  }
+
+  .mini\:w-\[300px\]{
+    width: 300px;
+  }
+
+  .mini\:w-\[60vw\]{
+    width: 60vw;
+  }
+
+  .mini\:w-\[70vw\]{
+    width: 70vw;
+  }
+
+  .mini\:w-\[80vw\]{
+    width: 80vw;
+  }
+
+  .mini\:w-\[90vw\]{
+    width: 90vw;
+  }
+
+  .mini\:justify-center{
+    justify-content: center;
+  }
+
+  .mini\:pl-\[0px\]{
+    padding-left: 0px;
+  }
+
+  .mini\:text-center{
+    text-align: center;
+  }
+
+  .mini\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .mini\:text-\[15px\]{
+    font-size: 15px;
+  }
+
+  .mini\:text-\[20px\]{
+    font-size: 20px;
+  }
+
+  .mini\:text-\[50px\]{
+    font-size: 50px;
   }
 }
 
