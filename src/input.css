@@ -20,6 +20,12 @@
   }
 
 @layer components {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
     .bg-size {
         height: 200%;
     }

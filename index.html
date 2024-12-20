@@ -8,7 +8,7 @@
         <link href="output.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
         <script src="anime.min.js"></script>
-        <title> Nuthanan T </title>       
+        <title> Nuthanan Tharmarajah </title>       
     </head>
     <body class="bg-black overflow-x-hidden">
         <div id="tsparticles"></div>
@@ -146,95 +146,65 @@
             </div>   
         </div> 
         <div class="block mt-6 min-h-[50vh] w-[100vw]"> 
+            <!-- one background-->
             <h2 class="relative text-shadow font-santoshi text-primary-purple text-[80px] font-extrabold left-[5%]"> Projects </h2>
-            <div class="relative flex h-[100vh] w-[80vw] ml-[10vw] mr-[10vw] mt-10 gap-5">
-                <div class="absolute ml-[10vw] w-[80vw] h-[100vh] left-[-10vw] bg-[#1C1C1E] rounded-3xl invisible z-10" id="communityCreatorSelection">
-                    <svg id = "cross" class="relative float-right mt-10 mr-10" width="50" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_177_18)">
-                        <path d="M97 12.912L87.088 3L50 40.088L12.912 3L3 12.912L40.088 50L3 87.088L12.912 97L50 59.912L87.088 97L97 87.088L59.912 50L97 12.912Z" stroke="#A29CDF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_177_18">
-                        <rect width="100" height="100" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>
-                    <div class="flex flex-row justify-center w-[80vw]">
-                        <div class="flex flex-col justify-center h-[80vh]">
-                            <div class="flex flex-row justify-center w-[40vw]">
-                                <h2 class="sm:text-center mini:text-center w-[40vw] font-santoshi text-primary-purple aboutMeSize text-[60px] text-center font-extrabold" id="title"> </h2>
-                            </div>
-                            <div class="flex flex-row justify-center w-[40vw]">
-                                <h3 class="italic font-santoshi font-thin text-white text-[50px]" id="languages"></h3>
-                            </div>
-                            <div class="flex flex-row justify-center w-[40vw]">
-                                <p class="block left-[-161px] sm:w-[100%] mini:w-[100%] text-shadow-no aboutMeParagraph md:leading-normal lg:leading-normal mt-6 w-[36vw] font-santoshi font-thin text-white text-center lg:text-3xl text-2xl" id="description">
-                                </p>
-                            </div>
-                            <div class="flex flex-row justify-center w-[40vw]">
-                                <a id="buttonLink">  
-                                    <div class="w-[20vw] h-[50px] mx-[10vw] rounded-3xl bg-primary-purple" id="clickheretoread"> 
-                                        <p class="italic font-santoshi font-thin w-[20vw] text-center text-white text-[30px]"> Click here to read! </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <img id="images" class="ml-[6vw] mt-[10vw] w-[30vw] h-[20vw]">     
-                    </div>
+            <!-- ai skin cancer detection-->
+            <div class="projectButton rounded-3xl bg-[#1C1C1E] w-[80vw] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between"> 
+                <div class="text-container w-[60%] mini:w-[100%]">
+                    <h2 class="mt-[20px] ml-[4vw] mini:ml-[0vw] w-[100%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] text-left mini:text-center font-extrabold">AI Skin Cancer Detection</h2>
+                    <p class="w-[100%] ml-[4vw] mini:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center">PyTorch</p>
+                    <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] mb-[20px] mt-[20px] text-white sm:text-[14px] text-[16px] font-santoshi mini:text-center">
+                        Programmed a convolutional neural network (CNN) model with the Skin Cancer MNIST: HAM10000 dataset using PyTorch to effectively identify different skin lesion types. Fine-tuned ResNet50 and DenseNet121 models, integrating the custom CNN, and subsequently comparing the performance results between the two models. Achieved a 74% accuracy using the ResNet50 model.
+                    </p>
                 </div>
-                <div class="aboveProjectButton flex-[2] flex flex-col gap-5"> 
-                    <div class="projectButton rounded-3xl bg-[#1C1C1E] flex-[1]" id="communityCreator">
-                        <div class="flex flex-row content-center w-[53.333333vw]"> 
-                            <div class="flex flex-col justify-center h-[33.33333vh]"> 
-                                <h2 class="font-santoshi ml-[5vw] w-[30vw] text-primary-purple aboutMeSize text-[60px] text-center font-extrabold"> Community Creator </h2>           
-                                <p class="text-white italic w-[30vw] ml-[5vw] text-[20px] text-center font-santoshi"> OpenAI, React, CSS </p>              
-                            </div>
-                            <img id="communityCreatorIcon" src="./images/communitycreatorlaptop.png" class="mt-[6vh] w-[13.33333vw] h-[10vw]">
-                        </div>
-                    </div>
-                    <div class="projectButton rounded-3xl bg-[#1C1C1E] flex-[1]" id="cancerResearch"> 
-                        <div class="flex flex-row content-center w-[53.333333vw]"> 
-                            <img id="skincancerdetectionicon" src="./images/skincancerdetection.png" class="ml-[3vw] mt-[6vh] w-[13.33333vw] h-[10vw]">
-                            <div class="flex flex-col justify-center h-[33.33333vh]"> 
-                                <h2 class="font-santoshi w-[40vw] text-primary-purple aboutMeSize text-[50px] text-center font-extrabold"> AI Skin Cancer Detection </h2>           
-                                <p class="text-white italic w-[40vw] text-center mr-[10vw] text-[20px] font-santoshi"> PyTorch </p>              
-                            </div>
-                        </div>
-                    </div>
-                    <div class="aboveProjectButton flex flex-row gap-5 flex-[1]"> 
-                        <div class="projectButton rounded-3xl bg-[#1C1C1E] flex-[3]" id="personalPortfolio"> 
-                            <div class="flex flex-row justify-center w-[32vw]"> 
-                                <img id="personalportfolioicon" src="./images/personalportfolio.png" class="w-[13.33333vw] h-[10vw]">
-                            </div>
-                                <h2 class="font-santoshi w-[32vw] text-primary-purple aboutMeSize text-[20px] text-center font-extrabold"> Personal Portfolio </h2>           
-                                <p class="text-white text-[20px] w-[32vw] font-santoshi text-center"> HTML, CSS, JavaScript, Anime.js, GSAP </p>              
-                        </div>
-                        <div class="projectButton rounded-3xl bg-[#1C1C1E] flex-[2]" id ="chemistryResearch">
-                            <div class="flex flex-col justify-center h-[25vh]"> 
-                                <h2 class="font-santoshi text-center w-[20vw] mt-[10vh] text-primary-purple aboutMeSize text-[20px] font-extrabold"> The Effects of the Temperatures of Anode and Cathode Solutions on Cell Potential                                </h2>           
-                                <p class="text-white text-center italic text-[20px] font-santoshi"> Excel </p>       
-                            </div>           
-                        </div>
-                    </div>
-                </div>
-                <div class="aboveProjectButton flex-[1] flex flex-col gap-5"> 
-                    <div class="projectButton rounded-3xl bg-[#1C1C1E] flex-[1]" id="mathNeuralNetwork"> 
-                        <div class="flex flex-col justify-center h-[40vh]"> 
-                            <h2 class="font-santoshi px-1 w-[25.6vw] text-primary-purple aboutMeSize text-center text-[35px] font-extrabold"> Mathematical Analysis of Loss Functions Research  </h2>           
-                            <p class="text-white italic text-center w-[25.6vw] text-[20px] font-santoshi"> PyTorch </p>              
-                        </div>
-                    </div>
-                    <div class="projectButton rounded-3xl bg-[#1C1C1E] flex-[1]" id="blenderModelling"> 
-                        <div class="flex flex-col justify-center content-center h-[50vh] w-[24vw]"> 
-                            <div class="flex flex-col justify-center"> 
-                                <h2 class="font-santoshi px-3 w-[25.6vw] text-primary-purple aboutMeSize text-[35px] text-center font-extrabold"> Sustainable Architecture and Mathematics Research </h2>           
-                                <p class="text-white italic w-[25.6vw]  text-[20px]  font-santoshi text-center"> Blender </p>              
-                                <img id="blenderModellling" src="./images/mathematicalmodelling.png" class="ml-[5vw] w-[15vw] h-[11.25vw]">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <img src="./images/skincancerdetection.png" class="w-[26.6666vw] h-[20vw] mini:w-[30vw] mini:h-[20vw] mini:w-[80%]">
             </div>
+
+            <div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80vw] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between"> 
+                <div class="text-container w-[60%] mini:w-[100%]">
+                    <h2 class="mt-[20px] ml-[4vw] mini:ml-[0vw] w-[100%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] text-left mini:text-center font-extrabold">Personal Portfolio</h2>
+                    <p class="w-[100%] ml-[4vw] mini:ml-[0vw] mx-auto text-white italic text-[15px] font-santoshi mini:text-center">HTML, Tailwind.css, Javascript, GSAP, Anime.js</p>
+                    <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] mb-[20px] mt-[20px] sm:text-[14px] text-white text-[16px] font-santoshi mini:text-center">
+                        Developed a platform to highlight my interests and showcase projects from the past four years. Applied UI/UX principles to design a functional and engaging website incorporating animations and cursor-related effects to elevate user experience.
+                    </p>
+                </div>
+                <img src="./images/personalportfolio.png" class="w-[26.6666vw] h-[20vw] mini:w-[30vw] mini:h-[20vw] mini:w-[80%]">
+            </div>
+
+            <div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80vw] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between"> 
+                <div class="text-container w-[60%] mini:w-[100%]">
+                    <h2 class="mt-[20px] ml-[4vw] mini:ml-[0vw] w-[100%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] text-left mini:text-center font-extrabold">Community Creator</h2>
+                    <p class="w-[100%] ml-[4vw] mini:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center">React, CSS, Cohere API</p>
+                    <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] font-santoshi mini:text-center">
+                        Developed an interactive platform that provides users with AI-powered feedback to improve their community's sustainable practices. Users answer multiple choice questions and receive actionable suggestions to help create a more sustainable environment.
+                    </p>
+                    <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] text-white text-[16px] sm:text-[14px] font-santoshi font-semibold mb-[20px] mini:text-center">YRHacks 2022 Sustainable Communities Award</p>
+                </div>
+                <img src="./images/communitycreatorlaptop.png" class="w-[26.6666vw] h-[20vw] mini:w-[30vw] mini:h-[20vw] mini:w-[80%]">
+            </div>
+
+            <div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80vw] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between"> 
+                <div class="text-container w-[60%] mini:w-[100%]">
+                    <h2 class="mt-[20px] ml-[4vw] mini:ml-[0vw] w-[100%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] text-left mini:text-center font-extrabold">Mathematical Analysis of Loss Functions</h2>
+                    <p class="w-[100%] ml-[4vw] mini:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center">PyTorch</p>
+                    <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] font-santoshi mini:text-center">
+                        Conducted research on the mathematical impact of loss functions on the accuracy and efficiency in neural network regression tasks. Concluded that while more complex loss functions improve accuracy, efficiency is reduced.
+                    </p>
+                </div>
+                <img src="./images/neuralnetwork.png" class="w-[26.6666vw] h-[20vw] mini:w-[30vw] mini:h-[20vw] mini:w-[80%]">
+            </div>
+
+            <div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80vw] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between"> 
+                <div class="text-container w-[60%] mini:w-[100%]">
+                    <h2 class="mt-[20px] ml-[4vw] mini:ml-[0vw] w-[100%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] text-left mini:text-center font-extrabold">Mathematical Analysis of Sustainable Architecture</h2>
+                    <p class="w-[100%] ml-[4vw] mini:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center">Blender</p>
+                    <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] font-santoshi mini:text-center">
+                        Designed and modeled a sustainable community using Blender, and analyzed the role that mathematical principles play in architecture and sustainable development.
+                    </p>
+                </div>
+                <img src="./images/mathematicalmodelling.png" class="w-[26.6666vw] h-[20vw] mini:w-[30vw] mini:h-[20vw] mini:w-[80%]">
+            </div>
+            <p class="my-4 text-white text-[20px] w-[100vw] font-santoshi text-center"> @2024 Nuthanan Tharmarajah </p>              
         </div>
         <script src="https://unpkg.com/lenis@1.1.10/dist/lenis.min.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-links@3/tsparticles.preset.links.min.js"></script>
