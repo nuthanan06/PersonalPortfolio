@@ -158,10 +158,6 @@
 
     }
 
-    .backgroundCircles {
-        background: rgba(5, 4, 11, 0.18);
-    }
-
     .clip-container {
         height: 15vw; 
         clip-path: inset(33% 0% 20% 0%); /* Shows the full letter */
