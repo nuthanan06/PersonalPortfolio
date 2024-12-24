@@ -901,6 +901,10 @@ html, body {
   margin-top: 15vh;
 }
 
+.mb-\[5vh\]{
+  margin-bottom: 5vh;
+}
+
 .block{
   display: block;
 }
