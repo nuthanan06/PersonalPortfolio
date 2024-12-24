@@ -905,6 +905,10 @@ html, body {
   margin-bottom: 5vh;
 }
 
+.mb-\[20vh\]{
+  margin-bottom: 20vh;
+}
+
 .block{
   display: block;
 }
