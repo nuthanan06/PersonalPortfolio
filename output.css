@@ -560,9 +560,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 300px){
+@media (min-width: 0px){
   .container{
-    max-width: 300px;
+    max-width: 0px;
   }
 }
 
@@ -809,11 +809,6 @@ html, body {
   margin-bottom: 1rem;
 }
 
-.my-\[2px\]{
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -884,30 +879,6 @@ html, body {
 
 .mt-\[20px\]{
   margin-top: 20px;
-}
-
-.mt-\[5vw\]{
-  margin-top: 5vw;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
-}
-
-.mb-\[20vh\]{
-  margin-bottom: 20vh;
-}
-
-.mt-\[20vh\]{
-  margin-top: 20vh;
-}
-
-.mb-\[5vh\]{
-  margin-bottom: 5vh;
-}
-
-.mt-\[10vh\]{
-  margin-top: 10vh;
 }
 
 .mt-\[5vh\]{
@@ -1175,10 +1146,6 @@ html, body {
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
-}
-
-.text-\[10px\]{
-  font-size: 10px;
 }
 
 .text-\[10vw\]{
@@ -1539,7 +1506,7 @@ html, body {
   }
 }
 
-@media (min-width: 300px) and (max-width: 690px){
+@media (min-width: 0px) and (max-width: 690px){
   .mini\:left-\[-161px\]{
     left: -161px;
   }
@@ -1580,8 +1547,12 @@ html, body {
     margin-top: 1.75rem;
   }
 
-  .mini\:mt-\[15vh\]{
-    margin-top: 15vh;
+  .mini\:mt-\[20vh\]{
+    margin-top: 20vh;
+  }
+
+  .mini\:mt-\[25vh\]{
+    margin-top: 25vh;
   }
 
   .mini\:flex{
@@ -1624,8 +1595,8 @@ html, body {
     width: 30vw;
   }
 
-  .mini\:w-\[70vw\]{
-    width: 70vw;
+  .mini\:w-\[60vw\]{
+    width: 60vw;
   }
 
   .mini\:w-\[80\%\]{
@@ -1667,6 +1638,10 @@ html, body {
 
   .mini\:text-\[15px\]{
     font-size: 15px;
+  }
+
+  .mini\:text-\[18px\]{
+    font-size: 18px;
   }
 
   .mini\:text-\[20px\]{
