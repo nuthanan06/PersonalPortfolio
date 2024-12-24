@@ -885,6 +885,22 @@ html, body {
   margin-top: 5vh;
 }
 
+.mt-\[10vh\]{
+  margin-top: 10vh;
+}
+
+.mb-\[10vh\]{
+  margin-bottom: 10vh;
+}
+
+.mb-\[15vh\]{
+  margin-bottom: 15vh;
+}
+
+.mt-\[15vh\]{
+  margin-top: 15vh;
+}
+
 .block{
   display: block;
 }
@@ -931,6 +947,18 @@ html, body {
 
 .min-h-\[70vh\]{
   min-height: 70vh;
+}
+
+.min-h-\[80vh\]{
+  min-height: 80vh;
+}
+
+.min-h-\[90vh\]{
+  min-height: 90vh;
+}
+
+.min-h-\[100vh\]{
+  min-height: 100vh;
 }
 
 .w-1\/2{
@@ -1341,6 +1369,10 @@ html, body {
 
   .sm\:mt-\[15vw\]{
     margin-top: 15vw;
+  }
+
+  .sm\:mb-\[30vh\]{
+    margin-bottom: 30vh;
   }
 
   .sm\:flex{
