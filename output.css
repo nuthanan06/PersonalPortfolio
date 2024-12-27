@@ -1468,6 +1468,10 @@ html, body {
     margin-left: 3rem;
   }
 
+  .md\:mt-\[5vh\]{
+    margin-top: 5vh;
+  }
+
   .md\:min-h-\[600px\]{
     min-height: 600px;
   }
@@ -1591,6 +1595,22 @@ html, body {
 
   .mini\:mt-\[25vh\]{
     margin-top: 25vh;
+  }
+
+  .mini\:mt-\[15vw\]{
+    margin-top: 15vw;
+  }
+
+  .mini\:mt-\[150px\]{
+    margin-top: 150px;
+  }
+
+  .mini\:mt-\[100px\]{
+    margin-top: 100px;
+  }
+
+  .mini\:mt-\[200px\]{
+    margin-top: 200px;
   }
 
   .mini\:flex{
