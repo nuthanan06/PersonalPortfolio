@@ -98,7 +98,6 @@
     }
 
     .circleExperience {
-        min-height: 50vh;
         display: flex; 
         flex-grow: 1; 
         flex-direction: column; 
