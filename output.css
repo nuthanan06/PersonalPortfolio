@@ -651,7 +651,6 @@ html, body {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 140px;
-  justify-content: center;
   margin-right: 5vw;
 }
 
@@ -821,6 +820,14 @@ html, body {
   margin-bottom: 20px;
 }
 
+.mb-\[20vh\]{
+  margin-bottom: 20vh;
+}
+
+.mb-\[5vh\]{
+  margin-bottom: 5vh;
+}
+
 .ml-10{
   margin-left: 2.5rem;
 }
@@ -877,36 +884,12 @@ html, body {
   margin-top: 1.5rem;
 }
 
-.mt-\[20px\]{
-  margin-top: 20px;
-}
-
-.mt-\[5vh\]{
-  margin-top: 5vh;
-}
-
 .mt-\[10vh\]{
   margin-top: 10vh;
 }
 
-.mb-\[10vh\]{
-  margin-bottom: 10vh;
-}
-
-.mb-\[15vh\]{
-  margin-bottom: 15vh;
-}
-
-.mt-\[15vh\]{
-  margin-top: 15vh;
-}
-
-.mb-\[5vh\]{
-  margin-bottom: 5vh;
-}
-
-.mb-\[20vh\]{
-  margin-bottom: 20vh;
+.mt-\[20px\]{
+  margin-top: 20px;
 }
 
 .block{
@@ -955,18 +938,6 @@ html, body {
 
 .min-h-\[70vh\]{
   min-height: 70vh;
-}
-
-.min-h-\[80vh\]{
-  min-height: 80vh;
-}
-
-.min-h-\[90vh\]{
-  min-height: 90vh;
-}
-
-.min-h-\[100vh\]{
-  min-height: 100vh;
 }
 
 .w-1\/2{
@@ -1367,6 +1338,10 @@ html, body {
     margin: auto;
   }
 
+  .sm\:mb-\[30vh\]{
+    margin-bottom: 30vh;
+  }
+
   .sm\:mt-2{
     margin-top: 0.5rem;
   }
@@ -1377,10 +1352,6 @@ html, body {
 
   .sm\:mt-\[15vw\]{
     margin-top: 15vw;
-  }
-
-  .sm\:mb-\[30vh\]{
-    margin-bottom: 30vh;
   }
 
   .sm\:flex{
@@ -1567,6 +1538,10 @@ html, body {
     margin: auto;
   }
 
+  .mini\:mb-\[30vh\]{
+    margin-bottom: 30vh;
+  }
+
   .mini\:ml-\[0px\]{
     margin-left: 0px;
   }
@@ -1587,16 +1562,8 @@ html, body {
     margin-top: 1.75rem;
   }
 
-  .mini\:mt-\[20vh\]{
-    margin-top: 20vh;
-  }
-
   .mini\:mt-\[25vh\]{
     margin-top: 25vh;
-  }
-
-  .mini\:mb-\[30vh\]{
-    margin-bottom: 30vh;
   }
 
   .mini\:flex{
@@ -1617,10 +1584,6 @@ html, body {
 
   .mini\:w-\[100\%\]{
     width: 100%;
-  }
-
-  .mini\:w-\[100vw\]{
-    width: 100vw;
   }
 
   .mini\:w-\[150px\]{
