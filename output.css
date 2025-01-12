@@ -961,6 +961,42 @@ html, body {
   min-height: 1150px;
 }
 
+.min-h-\[20vh\]{
+  min-height: 20vh;
+}
+
+.min-h-\[25vh\]{
+  min-height: 25vh;
+}
+
+.min-h-\[30vh\]{
+  min-height: 30vh;
+}
+
+.min-h-\[60vh\]{
+  min-height: 60vh;
+}
+
+.min-h-\[80vh\]{
+  min-height: 80vh;
+}
+
+.min-h-\[100vh\]{
+  min-height: 100vh;
+}
+
+.min-h-\[200vh\]{
+  min-height: 200vh;
+}
+
+.min-h-\[150vh\]{
+  min-height: 150vh;
+}
+
+.min-h-\[140vh\]{
+  min-height: 140vh;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -1657,6 +1693,10 @@ html, body {
 
   .mini\:min-h-\[1100px\]{
     min-height: 1100px;
+  }
+
+  .mini\:min-h-\[140vh\]{
+    min-height: 140vh;
   }
 
   .mini\:w-\[100\%\]{
