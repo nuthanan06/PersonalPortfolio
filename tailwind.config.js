@@ -25,7 +25,7 @@ module.exports = {
 
       screens: {
 
-        'mini': {'min': '300px', 'max': '690px'},
+        'mini': {'min': '0px', 'max': '690px'},
 
         'sm': {'min': '690px', 'max': '859px'},
         // => @media (min-width: 576px) { ... }
@@ -36,6 +36,10 @@ module.exports = {
         'lg': '1400px',
 
         'xl': '1700px',
+
+        '2xl': '2800px',
+
+        '3xl': '5000px',
       },
   
 
