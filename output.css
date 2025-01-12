@@ -949,6 +949,10 @@ html, body {
   min-height: 70vh;
 }
 
+.min-h-\[65vh\]{
+  min-height: 65vh;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -1645,6 +1649,14 @@ html, body {
 
   .mini\:w-\[90vw\]{
     width: 90vw;
+  }
+
+  .mini\:w-\[100vw\]{
+    width: 100vw;
+  }
+
+  .mini\:w-\[70vw\]{
+    width: 70vw;
   }
 
   .mini\:flex-col{
