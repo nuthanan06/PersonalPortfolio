@@ -893,6 +893,10 @@ html, body {
   margin-top: 20px;
 }
 
+.mt-\[5vh\]{
+  margin-top: 5vh;
+}
+
 .block{
   display: block;
 }
@@ -951,6 +955,10 @@ html, body {
 
 .min-h-\[65vh\]{
   min-height: 65vh;
+}
+
+.min-h-\[1150px\]{
+  min-height: 1150px;
 }
 
 .w-1\/2{
@@ -1450,6 +1458,10 @@ html, body {
     left: 100%;
   }
 
+  .md\:left-\[5\%\]{
+    left: 5%;
+  }
+
   .md\:float-right{
     float: right;
   }
@@ -1555,6 +1567,10 @@ html, body {
     left: 0px;
   }
 
+  .mini\:left-\[0\]{
+    left: 0;
+  }
+
   .mini\:float-right{
     float: right;
   }
@@ -1599,6 +1615,30 @@ html, body {
     margin-top: 15vh;
   }
 
+  .mini\:mb-\[100px\]{
+    margin-bottom: 100px;
+  }
+
+  .mini\:mb-\[\]{
+    margin-bottom: ;
+  }
+
+  .mini\:mb-\[2vh\]{
+    margin-bottom: 2vh;
+  }
+
+  .mini\:mb-\[3vh\]{
+    margin-bottom: 3vh;
+  }
+
+  .mini\:mb-\[50px\]{
+    margin-bottom: 50px;
+  }
+
+  .mini\:mb-\[70px\]{
+    margin-bottom: 70px;
+  }
+
   .mini\:flex{
     display: flex;
   }
@@ -1613,6 +1653,10 @@ html, body {
 
   .mini\:min-h-\[40vh\]{
     min-height: 40vh;
+  }
+
+  .mini\:min-h-\[1100px\]{
+    min-height: 1100px;
   }
 
   .mini\:w-\[100\%\]{
