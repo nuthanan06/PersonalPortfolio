@@ -825,10 +825,6 @@ html, body {
   margin-bottom: 20px;
 }
 
-.mb-\[5vh\]{
-  margin-bottom: 5vh;
-}
-
 .ml-10{
   margin-left: 2.5rem;
 }
@@ -885,10 +881,6 @@ html, body {
   margin-top: 1.5rem;
 }
 
-.mt-\[200px\]{
-  margin-top: 200px;
-}
-
 .mt-\[20px\]{
   margin-top: 20px;
 }
@@ -937,64 +929,12 @@ html, body {
   height: 7vw;
 }
 
-.min-h-\[1100px\]{
-  min-height: 1100px;
-}
-
-.min-h-\[40vh\]{
-  min-height: 40vh;
-}
-
 .min-h-\[50vh\]{
   min-height: 50vh;
 }
 
 .min-h-\[70vh\]{
   min-height: 70vh;
-}
-
-.min-h-\[65vh\]{
-  min-height: 65vh;
-}
-
-.min-h-\[1150px\]{
-  min-height: 1150px;
-}
-
-.min-h-\[20vh\]{
-  min-height: 20vh;
-}
-
-.min-h-\[25vh\]{
-  min-height: 25vh;
-}
-
-.min-h-\[30vh\]{
-  min-height: 30vh;
-}
-
-.min-h-\[60vh\]{
-  min-height: 60vh;
-}
-
-.min-h-\[80vh\]{
-  min-height: 80vh;
-}
-
-.min-h-\[100vh\]{
-  min-height: 100vh;
-}
-
-.min-h-\[200vh\]{
-  min-height: 200vh;
-}
-
-.min-h-\[150vh\]{
-  min-height: 150vh;
-}
-
-.min-h-\[140vh\]{
-  min-height: 140vh;
 }
 
 .w-1\/2{
@@ -1403,10 +1343,6 @@ html, body {
     margin: auto;
   }
 
-  .sm\:mb-\[30vh\]{
-    margin-bottom: 30vh;
-  }
-
   .sm\:mt-2{
     margin-top: 0.5rem;
   }
@@ -1528,10 +1464,6 @@ html, body {
     margin-left: 3rem;
   }
 
-  .md\:mt-\[5vh\]{
-    margin-top: 5vh;
-  }
-
   .md\:min-h-\[600px\]{
     min-height: 600px;
   }
@@ -1603,10 +1535,6 @@ html, body {
     left: 0px;
   }
 
-  .mini\:left-\[0\]{
-    left: 0;
-  }
-
   .mini\:float-right{
     float: right;
   }
@@ -1617,6 +1545,10 @@ html, body {
 
   .mini\:m-auto{
     margin: auto;
+  }
+
+  .mini\:mb-\[100px\]{
+    margin-bottom: 100px;
   }
 
   .mini\:mb-\[30vh\]{
@@ -1643,38 +1575,6 @@ html, body {
     margin-top: 1.75rem;
   }
 
-  .mini\:mt-\[100px\]{
-    margin-top: 100px;
-  }
-
-  .mini\:mt-\[15vh\]{
-    margin-top: 15vh;
-  }
-
-  .mini\:mb-\[100px\]{
-    margin-bottom: 100px;
-  }
-
-  .mini\:mb-\[\]{
-    margin-bottom: ;
-  }
-
-  .mini\:mb-\[2vh\]{
-    margin-bottom: 2vh;
-  }
-
-  .mini\:mb-\[3vh\]{
-    margin-bottom: 3vh;
-  }
-
-  .mini\:mb-\[50px\]{
-    margin-bottom: 50px;
-  }
-
-  .mini\:mb-\[70px\]{
-    margin-bottom: 70px;
-  }
-
   .mini\:flex{
     display: flex;
   }
@@ -1687,20 +1587,20 @@ html, body {
     height: 300px;
   }
 
-  .mini\:min-h-\[40vh\]{
-    min-height: 40vh;
-  }
-
   .mini\:min-h-\[1100px\]{
     min-height: 1100px;
   }
 
-  .mini\:min-h-\[140vh\]{
-    min-height: 140vh;
+  .mini\:min-h-\[40vh\]{
+    min-height: 40vh;
   }
 
   .mini\:w-\[100\%\]{
     width: 100%;
+  }
+
+  .mini\:w-\[100vw\]{
+    width: 100vw;
   }
 
   .mini\:w-\[150px\]{
@@ -1719,8 +1619,8 @@ html, body {
     width: 30vw;
   }
 
-  .mini\:w-\[60vw\]{
-    width: 60vw;
+  .mini\:w-\[70vw\]{
+    width: 70vw;
   }
 
   .mini\:w-\[80\%\]{
@@ -1733,14 +1633,6 @@ html, body {
 
   .mini\:w-\[90vw\]{
     width: 90vw;
-  }
-
-  .mini\:w-\[100vw\]{
-    width: 100vw;
-  }
-
-  .mini\:w-\[70vw\]{
-    width: 70vw;
   }
 
   .mini\:flex-col{
@@ -1770,10 +1662,6 @@ html, body {
 
   .mini\:text-\[15px\]{
     font-size: 15px;
-  }
-
-  .mini\:text-\[18px\]{
-    font-size: 18px;
   }
 
   .mini\:text-\[20px\]{
