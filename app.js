@@ -47,12 +47,6 @@ tl.set(a4, {opacity:0});
 tl.set(a5, {opacity:0});
 
 
-
-
-
-
-
-
 const icon1 = document.getElementById("#icon1");
 const icon2 = document.getElementById("#icon2");
 
@@ -308,3 +302,101 @@ tl.fromTo(r2,
 );
 
 
+let projects = {
+    skinCancerDetection: {
+        title: "AI Skin Cancer Detection",
+        languages: "PyTorch",
+        description: "Programmed a convolutional neural network (CNN) model with the Skin Cancer MNIST: HAM10000 dataset using PyTorch to effectively identify different skin lesion types. Fine-tuned ResNet50 and DenseNet121 models, integrating the custom CNN, and subsequently comparing the performance results between the two models. Achieved a 74% accuracy using the ResNet50 model.",
+        githubLink: "https://github.com/nuthanan06/AISkinCancerDetection/tree/main",
+        source: "./images/skincancerdetection.png"
+    },
+    communityCreator: {
+        title: "Community Creator",
+        languages: "React, CSS, Cohere API",
+        description: "Developed an interactive platform that provides users with AI-powered feedback to improve their community's sustainable practices. Users answer multiple choice questions and receive actionable suggestions to help create a more sustainable environment.",
+        githubLink: "https://github.com/nuthanan06/Community-Creator",
+        source: "./images/communitycreatorlaptop.png"
+    },
+    personalPortfolio: {
+        title: "Personal Portfolio",
+        languages: "HTML, Tailwind.css, Javascript, GSAP, Anime.js",
+        description: "Developed a platform to highlight my interests and showcase projects from the past four years. Applied UI/UX principles to design a functional and engaging website incorporating animations and cursor-related effects to elevate user experience.",
+        githubLink: "https://github.com/nuthanan06/PersonalPortfolio", 
+        source: "./images/personalportfolio.png"
+    }, 
+
+    mathLossFunction: {
+        title: "Mathematical Analysis of Loss Functions", 
+        languages: "PyTorch", 
+        description: "Conducted research on the mathematical impact of loss functions on the accuracy and efficiency in neural network regression tasks. Concluded that while more complex loss functions improve accuracy, efficiency is reduced.",
+        githubLink: "https://github.com/nuthanan06/ResearchPapers/blob/main/Mathematical%20Analysis%20of%20Neural%20Networks.pdf",
+        source: "./images/neuralnetwork.png"
+    }, 
+    modelling: {
+        title: "Mathematical Analysis of Sustainable Architecture", 
+        languages: "Blender", 
+        description: "Designed and modeled a sustainable community using Blender, and analyzed the role that mathematical principles play in architecture and sustainable development.",
+        githubLink: "https://github.com/nuthanan06/ResearchPapers/blob/main/Mathematical%20Analysis%20of%20Sustainable%20Architecture.pdf",
+        source: "./images/mathematicalmodelling.png"
+    }
+};
+
+let string = '<h2 class="relative text-shadow font-santoshi text-primary-purple text-[80px] font-extrabold md:left-[5%] mini:left-[0px] mini:m-auto mini:text-center"> Projects </h2>';
+
+for (let element of Object.values(projects)) {
+    console.log(element)
+    string += `<div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80vw] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between border-primary-purple border-4 skillBox"> 
+                    <div class="text-container w-[60%] mini:w-[100%]">
+                        <h2 class="mt-[20px] ml-[4vw] mini:ml-[0vw] w-[100%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] lg:text-[30px] text-left mini:text-center font-extrabold">${element.title}</h2>
+                        <p class="w-[100%] ml-[4vw] mini:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center">${element.languages}</p>
+                        <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] lg:text-[18px] font-santoshi mini:text-center">
+                            ${element.description}
+                        </p>
+                        <div class="mini:text-center">
+                            <a href="${element.githubLink}" target='_blank'>
+                                <button type="button" class="w-[150px] ml-[4vw] font-santoshi py-2.5 mini:mt-2 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                                    Github Link
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="${element.source}" class="w-[26.6666vw] h-[20vw] mini:h-[20vw] mini:w-[30vw]">
+                    </div> `
+}
+
+string += `<div class="flex flex-row w-[100vw] justify-center items-center gap-3"> 
+                <p class="my-4 text-gray-200 text-[15px] font-santoshi text-center"> @2024 Nuthanan Tharmarajah | </p>              
+                <a href="https://se-webring.xyz/" target="_blank">
+                    <img src="./images/logo_w.png" class="w-[30px] h-[20px]">    
+                </a>
+                <a href="https://www.linkedin.com/in/nuthanan-tharmarajah/" target="_blank">
+                    <img src="./images/linkedin.png"class="w-[30px] h-[30px]">
+                </a>
+                <a href="https://github.com/nuthanan06" target="_blank">
+                    <img src="./images/github-white-icon.png"class="w-[30px] h-[30px]">
+                </a>
+            </div>
+`
+
+let projectsContainer = document.getElementById("projects");
+projectsContainer.innerHTML = string; 
+
+
+`<div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80vw] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between border-primary-purple border-4 skillBox"> 
+<div class="text-container w-[60%] mini:w-[100%]">
+    <h2 class="mt-[20px] ml-[4vw] mini:ml-[0vw] w-[100%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] lg:text-[30px] text-left mini:text-center font-extrabold">Community Creator</h2>
+    <p class="w-[100%] ml-[4vw] mini:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center">React, CSS, Cohere API</p>
+    <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] lg:text-[18px] font-santoshi mini:text-center">
+        Developed an interactive platform that provides users with AI-powered feedback to improve their community's sustainable practices. Users answer multiple choice questions and receive actionable suggestions to help create a more sustainable environment.
+    </p>
+    <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] text-white text-[16px] sm:text-[14px] font-santoshi font-semibold mb-[20px] mini:text-center">YRHacks 2022 Sustainable Communities Award</p>
+    <div class="mini:text-center">
+        <a href="https://github.com/nuthanan06/Community-Creator" target='_blank'>
+            <button type="button" class="w-[150px] ml-[4vw] font-santoshi py-2.5 mini:mt-2 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                Github Link
+            </button>
+        </a>
+    </div>
+</div>
+<img src="./images/communitycreatorlaptop.png" class="w-[26.6666vw] h-[20vw] mini:h-[20vw] mini:w-[30vw]">
+</div> `
