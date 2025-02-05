@@ -380,23 +380,3 @@ string += `<div class="flex flex-row w-[100vw] justify-center items-center gap-3
 
 let projectsContainer = document.getElementById("projects");
 projectsContainer.innerHTML = string; 
-
-
-`<div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80vw] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between border-primary-purple border-4 skillBox"> 
-<div class="text-container w-[60%] mini:w-[100%]">
-    <h2 class="mt-[20px] ml-[4vw] mini:ml-[0vw] w-[100%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] lg:text-[30px] text-left mini:text-center font-extrabold">Community Creator</h2>
-    <p class="w-[100%] ml-[4vw] mini:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center">React, CSS, Cohere API</p>
-    <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] lg:text-[18px] font-santoshi mini:text-center">
-        Developed an interactive platform that provides users with AI-powered feedback to improve their community's sustainable practices. Users answer multiple choice questions and receive actionable suggestions to help create a more sustainable environment.
-    </p>
-    <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] text-white text-[16px] sm:text-[14px] font-santoshi font-semibold mb-[20px] mini:text-center">YRHacks 2022 Sustainable Communities Award</p>
-    <div class="mini:text-center">
-        <a href="https://github.com/nuthanan06/Community-Creator" target='_blank'>
-            <button type="button" class="w-[150px] ml-[4vw] font-santoshi py-2.5 mini:mt-2 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-                Github Link
-            </button>
-        </a>
-    </div>
-</div>
-<img src="./images/communitycreatorlaptop.png" class="w-[26.6666vw] h-[20vw] mini:h-[20vw] mini:w-[30vw]">
-</div> `
