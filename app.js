@@ -303,6 +303,13 @@ tl.fromTo(r2,
 
 
 let projects = {
+    teabag: {
+        title: "Teabag",
+        languages: "Next.js, Typescript, TailwindCSS, Python, Flask, Firebase, Langchain", 
+        description: "Created an accessible Next.js web app with TypeScript and TailwindCSS, enabling users to input and receive summarized stories via speech or text through Cohere API and Flask, improving inclusivity for diverse user needs. Used Firebase Firestore for data storage, allowing users to retrieve and extend previous conversations.",
+        githubLink: "https://github.com/JenniferYu-8/teabag/tree/main", 
+        source: "./images/teabag.png"
+    },
     skinCancerDetection: {
         title: "AI Skin Cancer Detection",
         languages: "PyTorch",
@@ -338,7 +345,7 @@ let projects = {
         description: "Designed and modeled a sustainable community using Blender, and analyzed the role that mathematical principles play in architecture and sustainable development.",
         githubLink: "https://github.com/nuthanan06/ResearchPapers/blob/main/Mathematical%20Analysis%20of%20Sustainable%20Architecture.pdf",
         source: "./images/mathematicalmodelling.png"
-    }
+    }, 
 };
 
 let string = '<h2 class="relative text-shadow font-santoshi text-primary-purple text-[80px] font-extrabold md:left-[5%] mini:left-[0px] mini:m-auto mini:text-center"> Projects </h2>';
