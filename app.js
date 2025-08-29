@@ -277,6 +277,38 @@ tl.fromTo(a5,
 
 );
 
+gsap.from(".aboutMeParagraph", {
+    scrollTrigger: {
+        trigger: ".aboutMeParagraph",
+        start: "top 80%", // start when top of element hits 80% of viewport
+    },
+    duration: 1.2,
+    opacity: 0,
+    x: -50,
+    ease: "power2.out"
+});
+
+gsap.from(".skillBox", {
+    scrollTrigger: {
+        trigger: ".skillBox",
+        start: "top 80%",
+    },
+    duration: 1,
+    opacity: 0,
+    scale: 0.8,
+    stagger: 0.2,
+    ease: "back.out(1.7)"
+});
+
+gsap.from("nav ul li", {
+    duration: 1,
+    opacity: 0,
+    y: -20,
+    stagger: 0.15,
+    delay: 0.5,
+    ease: "power3.out"
+});
+
 
 
 
@@ -348,26 +380,26 @@ let projects = {
     }, 
 };
 
-let string = '<h2 class="relative text-shadow font-santoshi text-primary-purple text-[80px] font-extrabold md:left-[5%] mini:left-[0px] mini:m-auto mini:text-center"> Projects </h2>';
+let string = '<h2 class="relative text-shadow font-santoshi md:left-[30px] text-primary-purple md:ml-[30px] text-[80px] font-extrabold md:left-[5%] mini:left-[0px] mini:m-auto mini:text-center"> Projects </h2>';
 
 for (let element of Object.values(projects)) {
     console.log(element)
-    string += `<div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80vw] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between border-primary-purple border-4 skillBox"> 
+    string += `<div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80%] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between border-primary-purple border-4 skillBox"> 
                     <div class="text-container w-[60%] mini:w-[100%]">
-                        <h2 class="mt-[20px] ml-[4vw] mini:ml-[0vw] w-[100%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] lg:text-[30px] text-left mini:text-center font-extrabold">${element.title}</h2>
-                        <p class="w-[100%] ml-[4vw] mini:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center">${element.languages}</p>
-                        <p class="w-[100%] mini:w-[80%] mini:text-[14px] mini:ml-[10%] ml-[4vw] mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] lg:text-[18px] font-santoshi mini:text-center">
+                        <h2 class="mt-[20px] w-[80%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] lg:text-[30px]  md:text-left text-center font-extrabold">${element.title}</h2>
+                        <p class="w-[80%] mini:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center">${element.languages}</p>
+                        <p class="w-[80%] mini:w-[80%] mini:text-[14px] mini:ml-[0vw]  mx-auto mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] lg:text-[18px] font-santoshi mini:text-center">
                             ${element.description}
                         </p>
                         <div class="mini:text-center">
                             <a href="${element.githubLink}" target='_blank'>
-                                <button type="button" class="w-[150px] ml-[4vw] font-santoshi py-2.5 mini:mt-2 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                                <button type="button" class="w-[150px] md:ml-[10%] mb-5 font-santoshi py-2.5 mini:mt-2 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                                     Github Link
                                 </button>
                             </a>
                         </div>
                     </div>
-                    <img src="${element.source}" class="w-[26.6666vw] h-[20vw] mini:h-[20vw] mini:w-[30vw]">
+                    <img src="${element.source}" class="w-[26.6666%] h-[20%] mini:h-[20%] mini:w-[30%]">
                     </div> `
 }
 
@@ -387,3 +419,37 @@ string += `<div class="flex flex-row w-[100vw] justify-center items-center gap-3
 
 let projectsContainer = document.getElementById("projects");
 projectsContainer.innerHTML = string; 
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.querySelectorAll(".projectButton").forEach((btn, i) => {
+  gsap.from(btn, {
+    scrollTrigger: {
+      trigger: btn,
+      start: "top 80%", // animate when button enters viewport
+    },
+    duration: 1,
+    x: i % 2 === 0 ? -100 : 100, // even buttons from left, odd from right
+    opacity: 0,
+    ease: "power3.out",
+  });
+});
+
+
+
+const circles = document.querySelectorAll(".circle");
+
+circles.forEach((circle) => {
+  gsap.from(circle.querySelectorAll("p"), {
+    scrollTrigger: {
+      trigger: circle,
+      start: "top 80%", // start when circle enters viewport
+      toggleActions: "play none none none",
+    },
+    opacity: 0,
+    y: 50,
+    stagger: 0.2, // paragraphs animate one after another
+    duration: 0.6,
+    ease: "power3.out"
+  });
+});
