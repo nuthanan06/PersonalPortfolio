@@ -380,20 +380,20 @@ let projects = {
     }, 
 };
 
-let string = '<h2 class="relative text-shadow font-santoshi md:left-[30px] text-primary-purple ml-[30px] text-[80px] font-extrabold md:left-[5%] mini:left-[0px] mini:m-auto mini:text-center"> Projects </h2>';
+let string = '<h2 class="relative text-shadow font-santoshi md:left-[30px] text-primary-purple ml-[30px] text-[80px] font-extrabold mini:left-[0px] mini:m-auto mini:text-center"> Projects </h2>';
 
 for (let element of Object.values(projects)) {
     console.log(element)
     string += `<div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80%] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between border-primary-purple border-4 skillBox"> 
                     <div class="text-container w-[60%] mini:w-[100%]">
-                        <h2 class="mt-[20px] w-[80%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] lg:text-[30px]    font-extrabold">${element.title}</h2>
-                        <p class="w-[80%] mini:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center">${element.languages}</p>
-                        <p class="w-[80%] mini:w-[80%] mini:text-[14px] mini:ml-[0vw]  mx-auto mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] lg:text-[18px] font-santoshi mini:text-center">
+                        <h2 class="mt-[20px] w-[80%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] lg:text-[30px] text-center font-extrabold">${element.title}</h2>
+                        <p class="w-[80%] sm:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center text-center">${element.languages}</p>
+                        <p class="w-[80%] mx-auto mini:text-[14px] sm:ml-[0vw]  mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] lg:text-[18px] font-santoshi  text-center">
                             ${element.description}
                         </p>
-                        <div class="mini:text-center">
+                        <div class="mini:text-center sm:text-center flex justify-center w-[100%]">
                             <a href="${element.githubLink}" target='_blank'>
-                                <button type="button" class="w-[150px] ml-[10%] mb-5 font-santoshi py-2.5 mini:mt-2 px-5 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                                <button type="button" class="w-[150px] mb-5 font-santoshi py-2.5 mini:mt-2 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                                     Github Link
                                 </button>
                             </a>
