@@ -403,7 +403,7 @@ for (let element of Object.values(projects)) {
                     </div> `
 }
 
-string += `<div class="flex flex-row w-[100vw] justify-center items-center gap-3"> 
+string += `<div class="flex flex-row w-[100%] justify-center items-center gap-3"> 
                 <p class="my-4 text-gray-200 text-[15px] font-santoshi text-center"> @2024 Nuthanan Tharmarajah | </p>              
                 <a href="https://se-webring.xyz/" target="_blank">
                     <img src="./images/logo_w.png" class="w-[30px] h-[20px]">    
