@@ -387,8 +387,8 @@ for (let element of Object.values(projects)) {
     string += `<div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80%] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between border-primary-purple border-4 skillBox"> 
                     <div class="text-container w-[60%] mini:w-[100%]">
                         <h2 class="mt-[20px] w-[80%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] lg:text-[30px] text-center font-extrabold">${element.title}</h2>
-                        <p class="w-[80%] sm:ml-[0vw] mx-auto text-white italic text-[20px] font-santoshi mini:text-center text-center">${element.languages}</p>
-                        <p class="w-[80%] mx-auto mini:text-[14px] sm:ml-[0vw]  mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] lg:text-[18px] font-santoshi  text-center">
+                        <p class="w-[80%] mx-auto text-white italic text-[20px] font-santoshi text-center">${element.languages}</p>
+                        <p class="w-[80%] mx-auto mini:text-[14px]  mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] lg:text-[18px] font-santoshi  text-center">
                             ${element.description}
                         </p>
                         <div class="mini:text-center sm:text-center flex justify-center w-[100%]">
