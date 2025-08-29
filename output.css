@@ -799,6 +799,11 @@ html, body {
   margin: auto;
 }
 
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -892,6 +897,14 @@ html, body {
   height: 10vw;
 }
 
+.h-\[20px\]{
+  height: 20px;
+}
+
+.h-\[30px\]{
+  height: 30px;
+}
+
 .h-\[550px\]{
   height: 550px;
 }
@@ -938,6 +951,10 @@ html, body {
 
 .w-\[250px\]{
   width: 250px;
+}
+
+.w-\[30px\]{
+  width: 30px;
 }
 
 .w-\[400px\]{
@@ -1026,6 +1043,10 @@ html, body {
 
 .gap-10{
   gap: 2.5rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
 }
 
 .gap-x-16{
@@ -1137,6 +1158,10 @@ html, body {
 
 .text-\[10vw\]{
   font-size: 10vw;
+}
+
+.text-\[15px\]{
+  font-size: 15px;
 }
 
 .text-\[25px\]{
@@ -1391,10 +1416,6 @@ html, body {
 @media (min-width: 860px){
   .md\:left-\[100\%\]{
     left: 100%;
-  }
-
-  .md\:left-\[30px\]{
-    left: 30px;
   }
 
   .md\:float-right{
@@ -1654,6 +1675,14 @@ html, body {
 
   .mini\:text-\[14px\]{
     font-size: 14px;
+  }
+}
+
+@media (min-width: 860px){
+  @media (min-width: 0px) and (max-width: 690px){
+    .md\:mini\:left-\[0px\]{
+      left: 0px;
+    }
   }
 }
 
