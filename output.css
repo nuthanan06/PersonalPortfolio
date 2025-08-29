@@ -941,6 +941,10 @@ html, body {
   height: 475px;
 }
 
+.h-\[500px\]{
+  height: 500px;
+}
+
 .min-h-\[50vh\]{
   min-height: 50vh;
 }
@@ -1035,6 +1039,10 @@ html, body {
 
 .w-\[475px\]{
   width: 475px;
+}
+
+.w-\[500px\]{
+  width: 500px;
 }
 
 .max-w-\[2000px\]{
