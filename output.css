@@ -1345,6 +1345,10 @@ html, body {
     margin-left: 10%;
   }
 
+  .sm\:ml-\[0vw\]{
+    margin-left: 0vw;
+  }
+
   .sm\:flex{
     display: flex;
   }
