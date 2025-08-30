@@ -380,7 +380,15 @@ let projects = {
     }, 
 };
 
-let string = '<h2 class="relative text-shadow font-santoshi md:left-[30px] text-primary-purple ml-[30px] text-[80px] font-extrabold mini:left-[0px] mini:m-auto mini:text-center"> Projects </h2>';
+let string = `<h2 class="relative text-shadow font-santoshi text-primary-purple text-[80px] ml-[30px] md:w-[50%] md:mb-8 font-extrabold md:mini:left-[0px] mini:m-auto mini:text-center"> Projects 
+                <div class="relative md:line"> 
+                    <div class="dotStuff"> 
+                        <div class="md:dot"> </div>
+                        <div class="md:dot"> </div>
+                        <div class="md:dot"> </div>
+                    </div>
+                </div>
+            </h2>`;
 
 for (let element of Object.values(projects)) {
     console.log(element)
