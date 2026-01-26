@@ -504,7 +504,7 @@ function renderProjects(year = 'All', category = 'All') {
         const restProjects = Object.values(projects).filter(p => !topSet.has(p.title.toLowerCase().replace(/\s/g, '')) && ((year === 'All' || p.year === year) && (category === 'All' || p.category === category)));
         // Render top projects (big cards)
         if (topProjects.length > 0) {
-            string += `<div class="flex flex-col gap-8 w-full max-w-[1600px] mx-auto mt-8 justify-between">`;
+            string += `<div class="flex flex-col gap-8 w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto mt-8 justify-between">`;
             for (let element of topProjects) {
                 string += `<div class="project-feature-card rounded-3xl bg-[#232136] border-primary-purple border-4 shadow-xl overflow-hidden flex flex-col md:flex-row hover:border-opacity-100 transition-all duration-300 relative"> 
                     <img src="${element.source}" alt="${element.title} screenshot" class="w-full md:w-[40%] max-h-[350px] object-contain border-r border-primary-purple bg-black" style="aspect-ratio: 1/1;"/>
@@ -533,7 +533,7 @@ function renderProjects(year = 'All', category = 'All') {
         }
         // Render rest projects (grid)
         if (restProjects.length > 0) {
-            string += `<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8 w-full max-w-[1600px] mx-auto justify-around">`;
+            string += `<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8 w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto justify-around">`;
             for (let element of restProjects) {
                 string += `<div class="projectButton rounded-2xl bg-[#1C1C1E] border-primary-purple border-2 skillBox overflow-hidden flex flex-col hover:border-opacity-100 transition-all duration-300 relative"> 
                     <div class="p-6 flex flex-col flex-1">
@@ -580,22 +580,31 @@ function renderProjects(year = 'All', category = 'All') {
         // Animate only the big project cards (not the grid)
         if (window.gsap && window.ScrollTrigger) {
             gsap.registerPlugin(ScrollTrigger);
-            gsap.utils.toArray(".project-feature-card").forEach((card, i) => {
-                gsap.fromTo(card,
-                    { y: 50, opacity: 0 },
-                    {
-                        scrollTrigger: {
-                            trigger: card,
-                            start: "top 80%",
-                            toggleActions: "play none none none"
-                        },
-                        duration: 0.8,
-                        y: 0,
-                        opacity: 1,
-                        ease: "power3.out",
-                        stagger: 0.1
-                    }
-                );
+            document.querySelectorAll(".project-feature-card").forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%", // animate when card enters viewport
+                    },
+                    duration: 1,
+                    x: i % 2 === 0 ? -100 : 100, // even cards from left, odd from right
+                    opacity: 0,
+                    ease: "power2.out",
+                });
+            });
+            // Animate the grid project cards (projectButton) after DOM update
+            document.querySelectorAll(".projectButton").forEach((btn, i) => {
+                gsap.from(btn, {
+                    scrollTrigger: {
+                        trigger: btn,
+                        start: "top 80%",
+                    },
+                    duration: 0.8,
+                    y: 50,
+                    opacity: 0,
+                    ease: "power3.out",
+                    stagger: 0.1
+                });
             });
         }
 
@@ -612,20 +621,38 @@ window.filterProjects = function(year, category) {
 // Initial render
 renderProjects(selectedYear, selectedCategory);
 
+// Animate experience cards on scroll (assumes .experienceCard class is used)
+if (window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll(".experienceCard").forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: "top 80%",
+            },
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            ease: "power2.out",
+            stagger: 0.1
+        });
+    });
+}
 
-gsap.registerPlugin(ScrollTrigger);
+const circles = document.querySelectorAll(".circle");
 
-document.querySelectorAll(".projectButton").forEach((btn, i) => {
-  gsap.from(btn, {
+circles.forEach((circle) => {
+  gsap.from(circle.querySelectorAll("p"), {
     scrollTrigger: {
-      trigger: btn,
-      start: "top 80%",
+      trigger: circle,
+      start: "top 80%", // start when circle enters viewport
+      toggleActions: "play none none none",
     },
-    duration: 0.8,
-    y: 50,
     opacity: 0,
-    ease: "power3.out",
-    stagger: 0.1
+    y: 50,
+    stagger: 0.2, // paragraphs animate one after another
+    duration: 0.6,
+    ease: "power3.out"
   });
 });
 

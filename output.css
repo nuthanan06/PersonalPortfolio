@@ -1481,6 +1481,11 @@ html, body {
   padding-right: 0px;
 }
 
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -1986,6 +1991,11 @@ html, body {
     justify-content: flex-end;
   }
 
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:text-\[17px\]{
     font-size: 17px;
   }
@@ -2010,8 +2020,18 @@ html, body {
 }
 
 @media (min-width: 1400px){
+  .lg\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .lg\:w-\[750\%\]{
     width: 750%;
+  }
+
+  .lg\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .lg\:text-3xl{
@@ -2044,6 +2064,11 @@ html, body {
   .xl\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .xl\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .xl\:text-\[40px\]{
