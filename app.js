@@ -341,21 +341,21 @@ let projects = {
         hackathon: "UofT Hacks VIII",
         category: "Full Stack",
         categoryColor: "#7C3AED", // purple
-        languages: "Next.js, Typescript, TailwindCSS, Python, Flask, Firebase, Langchain", 
-        description: "Summarizes stories from speech or text using AI. Built with Next.js, Flask, and Firebase.",
-        githubLink: "https://github.com/JenniferYu-8/teabag/tree/main", 
-        source: "./images/teabag.png"
+        languages: "Sonnet 3.5, FastAPI, Gemini 3.5, LangGraph, MapBoxGL, MongoDB, Next.js, OpenAI, Python, React, TailwindCSS", 
+        description: "An interactive planning tool that helps urban planners explore development through an ecological and Indigenous lens using AI agents.",
+        githubLink: "https://github.com/hannatonthat/uofthacks-2026", 
+        source: "./images/remap.png"
     },
     quickcart: {
         title: "QuickCart",
         year: "2026",
-        hackathon: "DeltaHacks X",
+        hackathon: "DeltaHacks XII",
         category: "Full Stack",
         categoryColor: "#7C3AED", // purple
-        languages: "Next.js, Typescript, TailwindCSS, Python, Flask, Firebase, Langchain", 
-        description: "Summarizes stories from speech or text using AI. Built with Next.js, Flask, and Firebase.",
-        githubLink: "https://github.com/JenniferYu-8/teabag/tree/main", 
-        source: "./images/teabag.png"
+        languages: "React Native, Expo Router, Firebase, Typescript, Flask, YOLOv8, OpenCV, MongoDB, CLIP, Stripe API", 
+        description: "A mobile app that uses computer vision to track grocery items in real time and streamlines checkout with Firebase syncing and Stripe payments.",
+        githubLink: "https://github.com/nuthanan06/quickcart", 
+        source: "./images/quickcart.png"
     },
     swiftsdk: {
         title: "Solana Swift SDK",
@@ -363,10 +363,10 @@ let projects = {
         hackathon: "Funded by Solana Foundation",
         category: "Development Tools",
         categoryColor: "#2563EB", // purple
-        languages: "Next.js, Typescript, TailwindCSS, Python, Flask, Firebase, Langchain", 
-        description: "Summarizes stories from speech or text using AI. Built with Next.js, Flask, and Firebase.",
-        githubLink: "https://github.com/JenniferYu-8/teabag/tree/main", 
-        source: "./images/teabag.png"
+        languages: "Swift, Solana, web3-core, rpc-core", 
+        description: "Built the first Solana SDK for Swift, enabling iOS developers to seamlessly integrate Solana blockchain functionalities into their applications.",
+        githubLink: "https://github.com/The-SolShare-Team/SolanaWalletAdapterKit", 
+        source: "./images/solanaswift.png"
     },
     solshare: {
         title: "Solshare",
@@ -374,10 +374,10 @@ let projects = {
         hackathon: "Hack the North (Best Use of Cohere API & Solana)",
         category: "Full Stack",
         categoryColor: "#7C3AED", // purple
-        languages: "Next.js, Typescript, TailwindCSS, Python, Flask, Firebase, Langchain", 
-        description: "Summarizes stories from speech or text using AI. Built with Next.js, Flask, and Firebase.",
-        githubLink: "https://github.com/JenniferYu-8/teabag/tree/main", 
-        source: "./images/teabag.png"
+        languages: "Cohere API, Firebase, GCP, Solana, Swift, SwiftUI, Typescript", 
+        description: "A cost-sharing mobile app designed to make splitting bills with friends easy, transparent, and secure, using blockchain technology.",
+        githubLink: "https://github.com/HTN-2025/Solshare-Front-End-App", 
+        source: "./images/solshare.png"
     },
     investie: {
         title: "Investie",
@@ -385,10 +385,10 @@ let projects = {
         hackathon: "Hack Western",
         category: "Full Stack",
         categoryColor: "#7C3AED", // purple
-        languages: "Next.js, Typescript, TailwindCSS, Python, Flask, Firebase, Langchain", 
-        description: "Summarizes stories from speech or text using AI. Built with Next.js, Flask, and Firebase.",
-        githubLink: "https://github.com/JenniferYu-8/teabag/tree/main", 
-        source: "./images/teabag.png"
+        languages: "Gemini 4.0, Next.js, Node.js, TailwindCSS, Typescript", 
+        description: "A female-focused investment app that helps users explore businesses, get AI-driven insights, and make informed financial decisions.",
+        githubLink: "https://github.com/nuthanan06/investie", 
+        source: "./images/investie.png"
     },
     teabag: {
         title: "Teabag",
@@ -491,11 +491,11 @@ function renderProjects(year = 'All', category = 'All') {
         string += `</div>`;
         // Top 5 most important projects (customize this list/order as needed)
         const topProjectKeys = [
-            'remap',
-            'quickcart',
             'swiftsdk',
             'solshare',
-            'investie'
+            'remap',
+            'quickcart',
+            'skinCancerDetection'
         ];
         const topSet = new Set(topProjectKeys.map(key => projects[key]?.title?.toLowerCase().replace(/\s/g, '')));
         const topProjects = topProjectKeys
@@ -507,7 +507,7 @@ function renderProjects(year = 'All', category = 'All') {
             string += `<div class="flex flex-col gap-8 w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto mt-8 justify-between">`;
             for (let element of topProjects) {
                 string += `<div class="project-feature-card rounded-3xl bg-[#232136] border-primary-purple border-4 shadow-xl overflow-hidden flex flex-col md:flex-row hover:border-opacity-100 transition-all duration-300 relative"> 
-                    <img src="${element.source}" alt="${element.title} screenshot" class="w-full md:w-[40%] max-h-[350px] object-contain border-r border-primary-purple bg-black" style="aspect-ratio: 1/1;"/>
+                    <img src="${element.source}" alt="${element.title} screenshot" class="w-full md:w-[40%] max-h-[360px] object-contain border-r border-primary-purple bg-black" style="aspect-ratio: 1/1;"/>
                     <div class="p-10 flex flex-col flex-1">
                         <span class="font-santoshi" style="background:${element.categoryColor};color:#fff;display:inline-block;padding:3px 16px;font-size:15px;font-weight:700;border-radius:9999px;margin-bottom:12px;align-self:flex-start;box-shadow:0 1px 4px 0 rgba(0,0,0,0.10);text-shadow:0 1px 2px rgba(0,0,0,0.10);line-height:1.2;">${element.category}</span>
                         <h3 class="font-santoshi text-primary-purple text-[32px] font-bold mb-2">${element.title}</h3>
@@ -522,7 +522,7 @@ function renderProjects(year = 'All', category = 'All') {
                             ${element.description}
                         </p>
                         <a href="${element.githubLink}" target="_blank" aria-label="GitHub Repository" class="absolute top-4 right-4 opacity-50 hover:opacity-100 transition-opacity duration-200">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 0.297C5.373 0.297 0 5.67 0 12.297c0 5.282 3.438 9.747 8.205 11.325.6.111.82-.261.82-.577 0-.285-.011-1.04-.017-2.042-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.419-1.305.762-1.606-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.019.005 2.047.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.625-5.475 5.921.43.371.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .319.216.694.825.576C20.565 22.04 24 17.576 24 12.297c0-6.627-5.373-12-12-12z"/>
                             </svg>
                         </a>
@@ -578,20 +578,20 @@ function renderProjects(year = 'All', category = 'All') {
         let projectsContainer = document.getElementById("projects");
         projectsContainer.innerHTML = string;
         // Animate only the big project cards (not the grid)
-        if (window.gsap && window.ScrollTrigger) {
             gsap.registerPlugin(ScrollTrigger);
             document.querySelectorAll(".project-feature-card").forEach((card, i) => {
                 gsap.from(card, {
                     scrollTrigger: {
-                        trigger: card,
-                        start: "top 80%", // animate when card enters viewport
+                    trigger: card,
+                    start: "top 80%", // animate when card enters viewport
                     },
                     duration: 1,
-                    x: i % 2 === 0 ? -100 : 100, // even cards from left, odd from right
+                    x: i % 2 === 0 ? -100 : 100, // even buttons from left, odd from right
                     opacity: 0,
-                    ease: "power2.out",
+                    ease: "power3.out",
+                    duration: 0.5,
                 });
-            });
+                });
             // Animate the grid project cards (projectButton) after DOM update
             document.querySelectorAll(".projectButton").forEach((btn, i) => {
                 gsap.from(btn, {
@@ -599,16 +599,13 @@ function renderProjects(year = 'All', category = 'All') {
                         trigger: btn,
                         start: "top 80%",
                     },
-                    duration: 0.8,
+                    duration: 0.5,
                     y: 50,
                     opacity: 0,
-                    ease: "power3.out",
-                    stagger: 0.1
+                    ease: "power2.out",
+
                 });
             });
-        }
-
-
         }
 
 // Expose filter function globally for inline onclick
@@ -622,8 +619,6 @@ window.filterProjects = function(year, category) {
 renderProjects(selectedYear, selectedCategory);
 
 // Animate experience cards on scroll (assumes .experienceCard class is used)
-if (window.gsap && window.ScrollTrigger) {
-    gsap.registerPlugin(ScrollTrigger);
     document.querySelectorAll(".experienceCard").forEach((card, i) => {
         gsap.from(card, {
             scrollTrigger: {
@@ -632,12 +627,9 @@ if (window.gsap && window.ScrollTrigger) {
             },
             duration: 1,
             y: 50,
-            opacity: 0,
             ease: "power2.out",
-            stagger: 0.1
         });
     });
-}
 
 const circles = document.querySelectorAll(".circle");
 
