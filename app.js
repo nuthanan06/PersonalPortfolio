@@ -335,83 +335,233 @@ tl.fromTo(r2,
 
 
 let projects = {
+    remap: {
+        title: "ReMap",
+        year: "2026",
+        hackathon: "UofT Hacks VIII",
+        category: "Full Stack",
+        categoryColor: "#7C3AED", // purple
+        languages: "Sonnet 3.5, FastAPI, Gemini 3.5, LangGraph, MapBoxGL, MongoDB, Next.js, OpenAI, Python, React, TailwindCSS", 
+        description: "An interactive planning tool that helps urban planners explore development through an ecological and Indigenous lens using AI agents.",
+        githubLink: "https://github.com/hannatonthat/uofthacks-2026", 
+        source: "./images/remap.png"
+    },
+    quickcart: {
+        title: "QuickCart",
+        year: "2026",
+        hackathon: "DeltaHacks XII",
+        category: "Full Stack",
+        categoryColor: "#7C3AED", // purple
+        languages: "React Native, Expo Router, Firebase, Typescript, Flask, YOLOv8, OpenCV, MongoDB, CLIP, Stripe API", 
+        description: "A mobile app that uses computer vision to track grocery items in real time and streamlines checkout with Firebase syncing and Stripe payments.",
+        githubLink: "https://github.com/nuthanan06/quickcart", 
+        source: "./images/quickcart.png"
+    },
+    swiftsdk: {
+        title: "Solana Swift SDK",
+        year: "2025",
+        hackathon: "Funded by Solana Foundation",
+        category: "Development Tools",
+        categoryColor: "#2563EB", // purple
+        languages: "Swift, Solana, web3-core, rpc-core", 
+        description: "Built the first Solana SDK for Swift, enabling iOS developers to seamlessly integrate Solana blockchain functionalities into their applications.",
+        githubLink: "https://github.com/The-SolShare-Team/SolanaWalletAdapterKit", 
+        source: "./images/solanaswift.png"
+    },
+    solshare: {
+        title: "Solshare",
+        year: "2025",
+        hackathon: "Hack the North (Best Use of Cohere API & Solana)",
+        category: "Full Stack",
+        categoryColor: "#7C3AED", // purple
+        languages: "Cohere API, Firebase, GCP, Solana, Swift, SwiftUI, Typescript", 
+        description: "A cost-sharing mobile app designed to make splitting bills with friends easy, transparent, and secure, using blockchain technology.",
+        githubLink: "https://github.com/HTN-2025/Solshare-Front-End-App", 
+        source: "./images/solshare.png"
+    },
+    investie: {
+        title: "Investie",
+        year: "2025",
+        hackathon: "Hack Western",
+        category: "Full Stack",
+        categoryColor: "#7C3AED", // purple
+        languages: "Gemini 4.0, Next.js, Node.js, TailwindCSS, Typescript", 
+        description: "A female-focused investment app that helps users explore businesses, get AI-driven insights, and make informed financial decisions.",
+        githubLink: "https://github.com/nuthanan06/investie", 
+        source: "./images/investie.png"
+    },
     teabag: {
         title: "Teabag",
+        year: "2024",
+        hackathon: "UofT Hacks VII",
+        category: "Full Stack",
+        categoryColor: "#7C3AED", // purple
         languages: "Next.js, Typescript, TailwindCSS, Python, Flask, Firebase, Langchain", 
-        description: "Created an accessible Next.js web app with TypeScript and TailwindCSS, enabling users to input and receive summarized stories via speech or text through Cohere API and Flask, improving inclusivity for diverse user needs. Used Firebase Firestore for data storage, allowing users to retrieve and extend previous conversations.",
+        description: "Summarizes stories from speech or text using AI. Built with Next.js, Flask, and Firebase.",
         githubLink: "https://github.com/JenniferYu-8/teabag/tree/main", 
         source: "./images/teabag.png"
     },
-    skinCancerDetection: {
-        title: "AI Skin Cancer Detection",
-        languages: "PyTorch",
-        description: "Programmed a convolutional neural network (CNN) model with the Skin Cancer MNIST: HAM10000 dataset using PyTorch to effectively identify different skin lesion types. Fine-tuned ResNet50 and DenseNet121 models, integrating the custom CNN, and subsequently comparing the performance results between the two models. Achieved a 74% accuracy using the ResNet50 model.",
-        githubLink: "https://github.com/nuthanan06/AISkinCancerDetection/tree/main",
-        source: "./images/skincancerdetection.png"
-    },
-    communityCreator: {
-        title: "Community Creator",
-        languages: "React, CSS, Cohere API",
-        description: "Developed an interactive platform that provides users with AI-powered feedback to improve their community's sustainable practices. Users answer multiple choice questions and receive actionable suggestions to help create a more sustainable environment.",
-        githubLink: "https://github.com/nuthanan06/Community-Creator",
-        source: "./images/communitycreatorlaptop.png"
-    },
-    personalPortfolio: {
-        title: "Personal Portfolio",
-        languages: "HTML, Tailwind.css, Javascript, GSAP, Anime.js",
-        description: "Developed a platform to highlight my interests and showcase projects from the past four years. Applied UI/UX principles to design a functional and engaging website incorporating animations and cursor-related effects to elevate user experience.",
-        githubLink: "https://github.com/nuthanan06/PersonalPortfolio", 
-        source: "./images/personalportfolio.png"
-    }, 
-
-    mathLossFunction: {
-        title: "Mathematical Analysis of Loss Functions", 
-        languages: "PyTorch", 
-        description: "Conducted research on the mathematical impact of loss functions on the accuracy and efficiency in neural network regression tasks. Concluded that while more complex loss functions improve accuracy, efficiency is reduced.",
-        githubLink: "https://github.com/nuthanan06/ResearchPapers/blob/main/Mathematical%20Analysis%20of%20Neural%20Networks.pdf",
-        source: "./images/neuralnetwork.png"
-    }, 
-    modelling: {
-        title: "Mathematical Analysis of Sustainable Architecture", 
-        languages: "Blender", 
-        description: "Designed and modeled a sustainable community using Blender, and analyzed the role that mathematical principles play in architecture and sustainable development.",
-        githubLink: "https://github.com/nuthanan06/ResearchPapers/blob/main/Mathematical%20Analysis%20of%20Sustainable%20Architecture.pdf",
-        source: "./images/mathematicalmodelling.png"
-    }, 
+        skinCancerDetection: {
+            title: "AI Skin Cancer Detection",
+            year: "2023",
+            hackathon: "",
+            category: "AI/ML",
+            categoryColor: "#10B981", // green
+            languages: "PyTorch",
+            description: "CNN model for skin lesion classification. Achieved 74% accuracy with ResNet50.",
+            githubLink: "https://github.com/nuthanan06/AISkinCancerDetection/tree/main",
+            source: "./images/skincancerdetection.png"
+        },
+        communityCreator: {
+            title: "Community Creator",
+            year: "2023",
+            hackathon: "Hack the 6ix",
+            category: "Full Stack",
+            categoryColor: "#7C3AED", // purple
+            languages: "React, CSS, Cohere API",
+            description: "AI-powered platform for feedback on sustainable community practices.",
+            githubLink: "https://github.com/nuthanan06/Community-Creator",
+            source: "./images/communitycreatorlaptop.png"
+        },
+        personalPortfolio: {
+            title: "Personal Portfolio",
+            year: "2024",
+            hackathon: "",
+            category: "Full Stack",
+            categoryColor: "#7C3AED", // purple
+            languages: "HTML, Tailwind.css, Javascript, GSAP, Anime.js",
+            description: "Personal website to showcase my projects and interests with custom UI/UX.",
+            githubLink: "https://github.com/nuthanan06/PersonalPortfolio", 
+            source: "./images/personalportfolio.png"
+        }, 
+        mathLossFunction: {
+            title: "Mathematical Analysis of Loss Functions", 
+            year: "2022",
+            hackathon: "",
+            category: "Research",
+            categoryColor: "#F59E42", // orange
+            languages: "PyTorch", 
+            description: "Research on how loss functions affect neural network accuracy and efficiency.",
+            githubLink: "https://github.com/nuthanan06/ResearchPapers/blob/main/Mathematical%20Analysis%20of%20Neural%20Networks.pdf",
+            source: "./images/neuralnetwork.png"
+        }, 
+        modelling: {
+            title: "Mathematical Analysis of Sustainable Architecture", 
+            year: "2022",
+            hackathon: "",
+            category: "Research",
+            categoryColor: "#F59E42", // orange
+            languages: "Blender", 
+            description: "Blender models and analysis of math in sustainable architecture.",
+            githubLink: "https://github.com/nuthanan06/ResearchPapers/blob/main/Mathematical%20Analysis%20of%20Sustainable%20Architecture.pdf",
+            source: "./images/mathematicalmodelling.png"
+        }
 };
 
-let string = `<h2 class="relative text-shadow font-santoshi text-primary-purple text-[80px] ml-[30px] md:w-[50%] md:mb-8 font-extrabold md:mini:left-[0px] mini:m-auto mini:text-center"> Projects 
-                <div class="relative md:line"> 
-                    <div class="dotStuff"> 
-                        <div class="md:dot"> </div>
-                        <div class="md:dot"> </div>
-                        <div class="md:dot"> </div>
-                    </div>
-                </div>
-            </h2>`;
+// --- Year & Category Filter UI ---
+const allYears = Array.from(new Set(Object.values(projects).map(p => p.year))).sort((a, b) => b - a);
+const allCategories = Array.from(new Set(Object.values(projects).map(p => p.category)));
+let selectedYear = 'All';
+let selectedCategory = 'All';
 
-for (let element of Object.values(projects)) {
-    console.log(element)
-    string += `<div class="mt-[20px] projectButton rounded-3xl bg-[#1C1C1E] w-[80%] m-auto flex mini:flex-wrap mini:flex-col items-center justify-between border-primary-purple border-4 skillBox"> 
-                    <div class="text-container w-[60%] mini:w-[100%]">
-                        <h2 class="mt-[20px] w-[80%] mx-auto font-santoshi text-primary-purple aboutMeSize text-[25px] lg:text-[30px] text-center font-extrabold">${element.title}</h2>
-                        <p class="w-[80%] mx-auto text-white italic text-[20px] font-santoshi text-center">${element.languages}</p>
-                        <p class="w-[80%] mx-auto mini:text-[14px]  mb-[20px] mt-[20px] text-white text-[16px] sm:text-[14px] lg:text-[18px] font-santoshi  text-center">
+function renderProjects(year = 'All', category = 'All') {
+        let string = `<h2 class="relative text-shadow font-santoshi text-primary-purple text-[80px] ml-[30px] md:w-[50%] md:mb-8 font-extrabold md:mini:left-[0px] mini:m-auto mini:text-center"> Projects 
+                                <div class="relative md:line"> 
+                                        <div class="dotStuff"> 
+                                                <div class="md:dot"> </div>
+                                                <div class="md:dot"> </div>
+                                                <div class="md:dot"> </div>
+                                        </div>
+                                </div>
+                        </h2>`;
+        // Filters at the top
+        string += `<div class='flex flex-wrap gap-3 justify-center items-center mb-4'>
+                <span class="font-santoshi text-gray-300 mr-2">Year:</span>
+                <button class="px-4 py-1 rounded-full border font-santoshi text-lg transition-all duration-150 ${year==='All' ? 'bg-primary-purple text-white border-primary-purple' : 'bg-black text-primary-purple border-primary-purple hover:bg-primary-purple hover:text-white'}" onclick="window.filterProjects && window.filterProjects('All', '${category}')">All</button>`;
+        for (const y of allYears) {
+                string += `<button class="px-4 py-1 rounded-full border font-santoshi text-lg transition-all duration-150 ${year===y ? 'bg-primary-purple text-white border-primary-purple' : 'bg-black text-primary-purple border-primary-purple hover:bg-primary-purple hover:text-white'}" onclick=\"window.filterProjects && window.filterProjects('${y}', '${category}')\">${y}</button>`;
+        }
+        string += `</div>`;
+        string += `<div class='flex flex-wrap gap-3 justify-center items-center mb-8'>
+                <span class="font-santoshi text-gray-300 mr-2">Category:</span>
+                <button class="px-4 py-1 rounded-full border font-santoshi text-lg transition-all duration-150 ${category==='All' ? 'bg-primary-purple text-white border-primary-purple' : 'bg-black text-primary-purple border-primary-purple hover:bg-primary-purple hover:text-white'}" onclick="window.filterProjects && window.filterProjects('${year}', 'All')">All</button>`;
+        for (const c of allCategories) {
+                string += `<button class="px-4 py-1 rounded-full border font-santoshi text-lg transition-all duration-150 ${category===c ? 'bg-primary-purple text-white border-primary-purple' : 'bg-black text-primary-purple border-primary-purple hover:bg-primary-purple hover:text-white'}" onclick=\"window.filterProjects && window.filterProjects('${year}', '${c}')\">${c}</button>`;
+        }
+        string += `</div>`;
+        // Top 5 most important projects (customize this list/order as needed)
+        const topProjectKeys = [
+            'swiftsdk',
+            'solshare',
+            'remap',
+            'quickcart',
+            'skinCancerDetection'
+        ];
+        const topSet = new Set(topProjectKeys.map(key => projects[key]?.title?.toLowerCase().replace(/\s/g, '')));
+        const topProjects = topProjectKeys
+            .map(key => projects[key])
+            .filter(p => p && ((year === 'All' || p.year === year) && (category === 'All' || p.category === category)));
+        const restProjects = Object.values(projects).filter(p => !topSet.has(p.title.toLowerCase().replace(/\s/g, '')) && ((year === 'All' || p.year === year) && (category === 'All' || p.category === category)));
+        // Render top projects (big cards)
+        if (topProjects.length > 0) {
+            string += `<div class="flex flex-col gap-8 w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto mt-8 justify-between">`;
+            for (let element of topProjects) {
+                string += `<div class="project-feature-card rounded-3xl bg-[#232136] border-primary-purple border-4 shadow-xl overflow-hidden flex flex-col md:flex-row hover:border-opacity-100 transition-all duration-300 relative"> 
+                    <img src="${element.source}" alt="${element.title} screenshot" class="w-full md:w-[40%] max-h-[360px] object-contain border-r border-primary-purple bg-black" style="aspect-ratio: 1/1;"/>
+                    <div class="p-10 flex flex-col flex-1">
+                        <span class="font-santoshi" style="background:${element.categoryColor};color:#fff;display:inline-block;padding:3px 16px;font-size:15px;font-weight:700;border-radius:9999px;margin-bottom:12px;align-self:flex-start;box-shadow:0 1px 4px 0 rgba(0,0,0,0.10);text-shadow:0 1px 2px rgba(0,0,0,0.10);line-height:1.2;">${element.category}</span>
+                        <h3 class="font-santoshi text-primary-purple text-[32px] font-bold mb-2">${element.title}</h3>
+                        <div class="text-[18px] text-gray-300 font-santoshi italic mb-2 mt-0">
+                            ${element.year}${element.hackathon ? ` &mdash; <span class='text-primary-purple'>${element.hackathon}</span>` : ''}
+                        </div>
+                        <hr class="border-t border-gray-700 mb-3">
+                        <div class="flex flex-wrap gap-2 mb-3 justify-start">
+                            ${element.languages.split(',').map(lang => `<span class='inline-block border-[1px] border-primary-purple rounded-[10px] text-gray-300 px-2 py-0.5 text-[14px] font-semibold font-santoshi'>${lang.trim()}</span>`).join('')}
+                        </div>
+                        <p class="text-white text-[20px] font-santoshi mb-4 line-clamp-4">
                             ${element.description}
                         </p>
-                        <div class="mini:text-center sm:text-center flex justify-center w-[100%]">
-                            <a href="${element.githubLink}" target='_blank'>
-                                <button type="button" class="w-[150px] mb-5 font-santoshi py-2.5 mini:mt-2 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-                                    Github Link
-                                </button>
-                            </a>
-                        </div>
+                        <a href="${element.githubLink}" target="_blank" aria-label="GitHub Repository" class="absolute top-4 right-4 opacity-50 hover:opacity-100 transition-opacity duration-200">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0.297C5.373 0.297 0 5.67 0 12.297c0 5.282 3.438 9.747 8.205 11.325.6.111.82-.261.82-.577 0-.285-.011-1.04-.017-2.042-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.419-1.305.762-1.606-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.019.005 2.047.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.625-5.475 5.921.43.371.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .319.216.694.825.576C20.565 22.04 24 17.576 24 12.297c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
                     </div>
-                    <img src="${element.source}" class="w-[26.6666%] h-[20%] mini:h-[20%] mini:w-[30%]">
-                    </div> `
-}
+                </div>`;
+            }
+            string += `</div>`;
+        }
+        // Render rest projects (grid)
+        if (restProjects.length > 0) {
+            string += `<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8 w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto justify-around">`;
+            for (let element of restProjects) {
+                string += `<div class="projectButton rounded-2xl bg-[#1C1C1E] border-primary-purple border-2 skillBox overflow-hidden flex flex-col hover:border-opacity-100 transition-all duration-300 relative"> 
+                    <div class="p-6 flex flex-col flex-1">
+                        <span class="font-santoshi" style="background:${element.categoryColor};color:#fff;display:inline-block;padding:3px 16px;font-size:15px;font-weight:700;border-radius:9999px;margin-bottom:12px;align-self:flex-start;box-shadow:0 1px 4px 0 rgba(0,0,0,0.10);text-shadow:0 1px 2px rgba(0,0,0,0.10);line-height:1.2;">${element.category}</span>
+                        <h3 class="font-santoshi text-primary-purple text-[25px] w-[80%] font-bold mb-0">${element.title}</h3>
+                        <div class="text-[15px] text-gray-300 font-santoshi italic mb-2 mt-0">
+                            ${element.year}${element.hackathon ? ` &mdash; <span class='text-primary-purple'>${element.hackathon}</span>` : ''}
+                        </div>
+                        <hr class="border-t border-gray-700 mb-3">
+                        <div class="flex flex-wrap gap-2 mb-3 justify-start">
+                            ${element.languages.split(',').map(lang => `<span class='inline-block border-[1px] border-primary-purple rounded-[10px] text-gray-300 px-2 py-0.5 text-[12px] font-semibold font-santoshi'>${lang.trim()}</span>`).join('')}
+                        </div>
+                        <p class="text-white text-[15px] font-santoshi mb-4 line-clamp-3">
+                            ${element.description}
+                        </p>
+                        <a href="${element.githubLink}" target="_blank" aria-label="GitHub Repository" class="absolute top-4 right-4 opacity-50 hover:opacity-100 transition-opacity duration-200">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0.297C5.373 0.297 0 5.67 0 12.297c0 5.282 3.438 9.747 8.205 11.325.6.111.82-.261.82-.577 0-.285-.011-1.04-.017-2.042-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.419-1.305.762-1.606-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.019.005 2.047.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.625-5.475 5.921.43.371.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .319.216.694.825.576C20.565 22.04 24 17.576 24 12.297c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <img src="${element.source}" alt="${element.title} screenshot" class="w-full max-h-[250px] object-contain mt-auto border-t border-primary-purple bg-black" style="aspect-ratio: 1/1;"/>
+                </div>`;
+            }
+            string += `</div>`;
+        }
 
-string += `<div class="flex flex-row w-[100%] justify-center items-center gap-3"> 
+        string += `<div class="flex flex-row w-[100%] justify-center items-center gap-3"> 
                 <p class="my-4 text-gray-200 text-[15px] font-santoshi text-center"> @2024 Nuthanan Tharmarajah | </p>              
                 <a href="https://se-webring.xyz/" target="_blank">
                     <img src="./images/logo_w.png" class="w-[30px] h-[20px]">    
@@ -423,27 +573,63 @@ string += `<div class="flex flex-row w-[100%] justify-center items-center gap-3"
                     <img src="./images/github-white-icon.png"class="w-[30px] h-[30px]">
                 </a>
             </div>
-`
+        `;
+        // Removed erroneous leftover button and duplicate grid rendering
+        let projectsContainer = document.getElementById("projects");
+        projectsContainer.innerHTML = string;
+        // Animate only the big project cards (not the grid)
+            gsap.registerPlugin(ScrollTrigger);
+            document.querySelectorAll(".project-feature-card").forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                    trigger: card,
+                    start: "top 80%", // animate when card enters viewport
+                    },
+                    duration: 1,
+                    x: i % 2 === 0 ? -100 : 100, // even buttons from left, odd from right
+                    opacity: 0,
+                    ease: "power3.out",
+                    duration: 0.5,
+                });
+                });
+            // Animate the grid project cards (projectButton) after DOM update
+            document.querySelectorAll(".projectButton").forEach((btn, i) => {
+                gsap.from(btn, {
+                    scrollTrigger: {
+                        trigger: btn,
+                        start: "top 80%",
+                    },
+                    duration: 0.5,
+                    y: 50,
+                    opacity: 0,
+                    ease: "power2.out",
 
-let projectsContainer = document.getElementById("projects");
-projectsContainer.innerHTML = string; 
+                });
+            });
+        }
 
-gsap.registerPlugin(ScrollTrigger);
+// Expose filter function globally for inline onclick
+window.filterProjects = function(year, category) {
+    selectedYear = year;
+    selectedCategory = category;
+    renderProjects(year, category);
+}
 
-document.querySelectorAll(".projectButton").forEach((btn, i) => {
-  gsap.from(btn, {
-    scrollTrigger: {
-      trigger: btn,
-      start: "top 80%", // animate when button enters viewport
-    },
-    duration: 1,
-    x: i % 2 === 0 ? -100 : 100, // even buttons from left, odd from right
-    opacity: 0,
-    ease: "power3.out",
-  });
-});
+// Initial render
+renderProjects(selectedYear, selectedCategory);
 
-
+// Animate experience cards on scroll (assumes .experienceCard class is used)
+    document.querySelectorAll(".experienceCard").forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: "top 80%",
+            },
+            duration: 1,
+            y: 50,
+            ease: "power2.out",
+        });
+    });
 
 const circles = document.querySelectorAll(".circle");
 
@@ -461,3 +647,6 @@ circles.forEach((circle) => {
     ease: "power3.out"
   });
 });
+
+
+

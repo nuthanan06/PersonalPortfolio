@@ -13,7 +13,28 @@
         <title> Nuthanan Tharmarajah </title>       
     </head>
     <body class="bg-black overflow-x-hidden">
-        <div id="tsparticles"></div>
+                <div id="tsparticles"></div>
+                <style>
+                /* Animated underline for vlog link */
+                .vlog-underline {
+                    position: relative;
+                    color: #a29cdf;
+                    text-decoration: none;
+                }
+                .vlog-underline .underline-anim {
+                    position: absolute;
+                    left: 0; bottom: -2px;
+                    width: 100%;
+                    height: 2px;
+                    background: linear-gradient(90deg, #a29cdf 0%, #fff 100%);
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+                }
+                .vlog-underline:hover .underline-anim {
+                    transform: scaleX(1);
+                }
+                </style>
         <div class="block">
             <div class="mini:flex mini:justify-center sm:flex sm:justify-center mt-12 md:float-left">
                 <h1 class="font-santoshi font-extrabold text-6xl text-white mini:left-[0px] md:ml-12 tracking-tight">nuthanan
@@ -28,16 +49,19 @@
                     </svg>
                 </h1>
             </div>
-            <nav class="mini:flex mini:justify-center sm:flex sm:justify-center">
+            <nav id="main-navbar" class="mini:flex mini:justify-center sm:flex sm:justify-center">
                 <ul class="mini:clear-both mini:justify-center sm:justify-center md:clear-none md:float-right text-white flex flex-row md:justify-end gap-x-16 font-santoshi text-2xl h-16 mini:mt-2 sm:mt-2 md:my-12 mini:m-auto sm:m-auto md:mx-10"> 
-                    <a href="./images/NuthananTharmarajahResume.pdf" " target='_blank'>
-                        <li class = "opacity-50 basis-auto"> Resume </li>
+                    <a href="./images/NuthananTharmarajahResume.pdf" target="_blank">
+                        <li class="opacity-50 basis-auto"> Resume </li>
                     </a>
-                    <a href="https://www.linkedin.com/in/nuthanan-t/" target='_blank'>
-                        <li class = "opacity-50 basis-auto">  Linkedin </li>
+                    <a href="https://www.linkedin.com/in/nuthanan-t/" target="_blank">
+                        <li class="opacity-50 basis-auto"> Linkedin </li>
                     </a>
-                    <a href="https://github.com/nuthanan06" target='_blank'>
-                        <li class = "opacity-50 basis-auto"> Github </li>
+                    <a href="https://github.com/nuthanan06" target="_blank">
+                        <li class="opacity-50 basis-auto"> Github </li>
+                    </a>
+                    <a href="https://www.instagram.com/nuthvlogs/" target="_blank">
+                        <li class="opacity-50 basis-auto vlog-nav-link"> Vlogs </li>
                     </a>
                 </ul>
             </nav>
@@ -106,7 +130,7 @@
                 </h2>
                 <p class="block left-[-161px] mini:left-[-161px] md:w-[100%] mini:m-auto sm:left-[-161px] w-[80vw] sm:m-auto text-shadow-no aboutMeParagraph md:leading-normal lg:leading-normal mt-6 font-santoshi font-thin text-white lg:text-3xl text-2xl mini:text-[20px]">
                     👋 Hi! I’m <strong class="text-primary-purple font-semibold">Nuthanan</strong>, a <strong>Software Engineering student</strong> at the <strong>University of Waterloo</strong>. I’m passionate about <strong class="text-primary-purple font-semibold">full-stack development, systems design and high-level architecture</strong>.<br><br>
-                    💻 I enjoy building <strong class="text-primary-purple font-semibold">scalable, efficient solutions</strong> with <strong>Python, JavaScript, React</strong>, and more.<br><br>
+                        💻 I'm currently working as an <strong class="text-primary-purple font-semibold">SDE @ RBC</strong>. I also like to <a href="https://www.instagram.com/nuthvlogs/" class="vlog-underline font-semibold" target="_blank" rel="noopener noreferrer">vlog!<span class="underline-anim"></span></a> Check it out! <br><br>
                     ✉️ Reach out: <a href="mailto:n2tharma@uwaterloo.ca" class="underline text-white font-semibold">n2tharma@uwaterloo.ca</a>
                 </p>
             </div>
@@ -135,48 +159,14 @@
                 </div>
             </div>
         </div>        
-        <div class="block max-w-[2000px] md:mx-auto sm:mt-[15vw] mt-[5vh] w-[100vw]"> 
-            <h2 class="relative text-shadow font-santoshi text-primary-purple text-[80px] ml-[30px] md:w-[50%] md:mb-8 font-extrabold md:mini:left-[0px] mini:m-auto mini:text-center"> Skills 
-                <div class="relative md:line"> 
-                    <div class="dotStuff"> 
-                        <div class="md:dot"> </div>
-                        <div class="md:dot"> </div>
-                        <div class="md:dot"> </div>
-                    </div>
-                </div>
-            </h2>
-            <div class="flex flex-wrap justify-center gap-10 pt-3 w-[100%]">
-                 <!-- Front-End & Back-End -->
-                <div class="skillBox rounded-[67px] w-[500px] h-[500px] sm:w-[300px] sm:h-[300px] mini:w-[300px] mini:h-[300px] border-primary-purple border-4">
-                    <p class="relative transparency font-poppins w-[350px] text-[40px] sm:w-[200px] sm:text-[20px] mini:w-[150px] mini:text-[20px] font-semibold text-primary-purple mt-14 ml-10"> Full-Stack Dev </p>
-                    <p class="relative w-[400px] font-light text-[25px] sm:w-[200px] sm:text-[15px] mini:w-[200px] mini:text-[15px] ml-10 text-white font-poppins">
-                        Built scalable web apps using React, Next.js, Node.js & Express. Optimized APIs and integrated databases for efficiency.
-                    </p>
-                </div>
-
-                <!-- Systems Design -->
-                <div class="skillBox rounded-[67px] w-[500px] h-[500px] sm:w-[300px] sm:h-[300px] mini:w-[300px] mini:h-[300px] border-primary-purple border-4">
-                    <p class="relative transparency font-poppins w-[350px] text-[40px] sm:w-[200px] sm:text-[20px] mini:w-[150px] mini:text-[20px] font-semibold text-primary-purple mt-14 ml-10"> Systems Design </p>
-                    <p class="relative w-[400px] font-light text-[25px] sm:w-[200px] sm:text-[15px] mini:w-[200px] mini:text-[15px] ml-10 text-white font-poppins">
-                        Designed reliable, highly available systems; monitored uptime & performance with logging and metrics.
-                    </p>
-                </div>
-
-                <!-- CI/CD & DevOps -->
-                <div class="skillBox rounded-[67px] w-[500px] h-[500px] sm:w-[300px] sm:h-[300px] mini:w-[300px] mini:h-[300px] border-primary-purple border-4">
-                    <p class="relative transparency font-poppins w-[350px] text-[40px] sm:w-[200px] sm:text-[20px] mini:w-[150px] mini:text-[20px] font-semibold text-primary-purple mt-14 ml-10"> CI/CD & DevOps </p>
-                    <p class="relative w-[400px] font-light text-[25px] sm:w-[200px] sm:text-[15px] mini:w-[200px] mini:text-[15px] ml-10 text-white font-poppins">
-                        Automated builds, testing & deployment pipelines using GitHub Actions and Docker. Ensured reliability & faster iteration.
-                    </p>
-                </div>
-
-            </div>   
-        </div> 
         <div id="projects" class="max-w-[2000px] md:mx-auto block mt-6 min-h-[50vh] w-full"></div>
         <script src="https://unpkg.com/lenis@1.1.10/dist/lenis.min.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-links@3/tsparticles.preset.links.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+                <script>
+                </script>
 
         <script> 
         

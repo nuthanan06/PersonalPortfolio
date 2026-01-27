@@ -1,12 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
-  purge: [
+  content: [
     './**/*.html',
     './src/**/*.{js,jsx,ts,tsx,vue}',
+    './*.js'
   ],
-
-  content: ["./dist/*.{html,js}"],
   theme: {
     extend: {
       clipPath: {
