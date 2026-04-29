@@ -408,7 +408,7 @@ let projects = {
         category: "Full Stack",
         categoryColor: "#7C3AED",
         languages: "JavaScript, Python, HTML, CSS, Gemini, ElevenLabs",
-        description: "Cost-free, beginner-friendly music production in two tabs: chat with Gemini + ElevenLabs, then mix tracks live with computer-vision hand controls.",
+        description: "A cost-free, beginner-friendly browser DAW where you can chat with Gemini to generate music tracks with ElevenLabs, then mix them live with computer-vision hand controls.",
         githubLink: "https://github.com/nur4o4/listenhacks",
         source: "./images/TwoTabs.png"
     },
@@ -419,7 +419,7 @@ let projects = {
         category: "AI/ML",
         categoryColor: "#10B981",
         languages: "Python, TypeScript, TensorFlow, MediaPipe, YOLO11, LangChain, FastAPI, Next.js, OpenCV, Twelve Labs",
-        description: "LangChain skating copilot that extracts YouTube clips from pro programs and scores classified jumps with NYT-style visuals, using a fine-tuned YOLO11 jump classifier.",
+        description: "LangChain skating copilot that extracts YouTube clips from pro figure skating programs and scores classified jumps with NYT-style visuals, using a fine-tuned YOLO11 jump classifier.",
         githubLink: "https://github.com/sylviax28/sk8tr",
         source: "./images/Sk8tr.png"
     },
