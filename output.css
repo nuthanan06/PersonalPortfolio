@@ -984,6 +984,10 @@ html, body {
   height: 100%;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .max-h-\[250px\]{
   max-height: 250px;
 }
@@ -998,6 +1002,10 @@ html, body {
 
 .min-h-\[70vh\]{
   min-height: 70vh;
+}
+
+.min-h-16{
+  min-height: 4rem;
 }
 
 .w-1\/2{
@@ -1129,12 +1137,20 @@ html, body {
        column-gap: 1rem;
 }
 
+.gap-y-2{
+  row-gap: 0.5rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
 
 .overflow-x-hidden{
   overflow-x: hidden;
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
 }
 
 .rounded-2xl{
@@ -1260,6 +1276,11 @@ html, body {
   padding-bottom: 0.25rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pl-12{
   padding-left: 3rem;
 }
@@ -1335,6 +1356,11 @@ html, body {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -1666,6 +1692,11 @@ html, body {
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:text-\[17px\]{

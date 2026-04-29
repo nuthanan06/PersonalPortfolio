@@ -154,6 +154,73 @@
         }
         #back-link:hover { color:var(--p); border-color:rgba(162,156,223,0.3); }
 
+        /* ── mobile card recap ── */
+        #mobile-recap {
+            display:none;
+            width:min(720px,94vw);
+            min-height:100dvh;
+            max-height:100dvh;
+            overflow:auto;
+            padding:58px 2px 18px;
+        }
+        .m-card {
+            background:linear-gradient(140deg,#0d0b1a 0%,#120f24 100%);
+            border:1px solid rgba(162,156,223,0.18);
+            border-radius:12px;
+            padding:14px;
+            margin-bottom:10px;
+            box-shadow:0 8px 24px rgba(0,0,0,.35);
+        }
+        .m-title {
+            font-size:11px;
+            font-weight:700;
+            letter-spacing:.2em;
+            text-transform:uppercase;
+            color:var(--p);
+            opacity:.75;
+            margin-bottom:8px;
+        }
+        .m-h {
+            font-size:clamp(20px,7vw,28px);
+            font-weight:900;
+            line-height:1.1;
+            margin-bottom:8px;
+        }
+        .m-p {
+            font-size:14px;
+            color:rgba(255,255,255,.82);
+            line-height:1.55;
+        }
+        .m-row { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+        .m-pill {
+            display:inline-block;
+            border:1px solid rgba(162,156,223,.3);
+            border-radius:9999px;
+            padding:4px 8px;
+            font-size:10px;
+            font-weight:700;
+            letter-spacing:.06em;
+            color:rgba(162,156,223,.85);
+            margin:2px 6px 0 0;
+        }
+        .m-img {
+            width:100%;
+            height:120px;
+            object-fit:cover;
+            border-radius:8px;
+            border:1px solid rgba(162,156,223,.2);
+            background:rgba(8,7,18,.55);
+        }
+        .m-list { margin-top:6px; display:flex; flex-direction:column; gap:6px; }
+        .m-li {
+            font-size:13px;
+            color:rgba(255,255,255,.85);
+            background:rgba(162,156,223,0.08);
+            border:1px solid rgba(162,156,223,0.16);
+            border-radius:8px;
+            padding:8px 10px;
+        }
+
         /* ── scrapbook elements ── */
         /* washi tape — diagonal stripe pattern */
         .tape {
@@ -236,10 +303,30 @@
             transform: scale(0.95);
             transform-origin: center top;
         }
-        .polar-cap { font-family:var(--script); font-size:8px; color:rgba(255,255,255,.38); text-align:center; margin-top:2px; line-height:1; }
+        .polar-cap { font-family:var(--font); font-size:8px; font-weight:600; letter-spacing:.04em; color:rgba(255,255,255,.46); text-align:center; margin-top:2px; line-height:1.2; padding:2px 4px 0; }
 
         @keyframes shimmer { 0%{background-position:100% 0} 100%{background-position:-100% 0} }
         @keyframes float   { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+
+        @media (max-width: 900px) {
+            html, body {
+                height:100dvh;
+                overflow:auto;
+                background:
+                    radial-gradient(ellipse at 72% 18%, rgba(55,40,130,0.28) 0%, transparent 52%),
+                    radial-gradient(ellipse at 16% 82%, rgba(20,50,85,0.2) 0%, transparent 50%),
+                    var(--bg);
+            }
+            #desk { display:none; }
+            #mobile-recap { display:block; }
+            #back-link {
+                top:10px;
+                left:12px;
+                padding:4px 10px;
+                font-size:12px;
+                gap:5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -279,6 +366,85 @@
   </div>
 </div>
 
+<section id="mobile-recap">
+  <div class="m-card">
+    <div class="m-title">winter 2026</div>
+    <div class="m-h">term recap 🔥</div>
+    <div>
+      <span class="m-pill">1 co-op</span>
+      <span class="m-pill">4 hackathons</span>
+      <span class="m-pill">9 events</span>
+    </div>
+  </div>
+
+  <div class="m-card">
+    <div class="m-title">co-op @ rbc</div>
+    <div class="m-p"><strong style="color:var(--p)">software development engineer</strong><br>jan - apr 2026</div>
+    <div class="m-list">
+      <div class="m-li">built langgraph ai tooling for jira requirement/test-case generation</div>
+      <div class="m-li">co-developed ssl/tls renewal automation across 4 internal services</div>
+      <div class="m-li">reduced regression test execution time by 50% on an 8,100-line bdd framework</div>
+    </div>
+    <div class="m-row" style="margin-top:8px;">
+      <img class="m-img" src="./images/RBC.png" alt="RBC memory">
+      <img class="m-img" src="./images/PhotoWManager.JPG" alt="RBC team photo">
+    </div>
+  </div>
+
+  <div class="m-card">
+    <div class="m-title">hackathon season</div>
+    <div class="m-p"><strong style="color:var(--p)">ReMap</strong> (uoft hacks viii) - ai urban planning through ecological + indigenous perspectives.</div>
+    <div class="m-p" style="margin-top:6px;"><strong style="color:var(--p)">QuickCart</strong> (deltahacks xii) - real-time cv grocery cart using clip with fast stripe checkout.</div>
+    <div class="m-p" style="margin-top:6px;"><strong style="color:var(--p)">TwoTabs</strong> (listenhacks) - beginner-friendly music production in two tabs with chat + hand gestures. <strong>Second Place.</strong></div>
+    <div class="m-p" style="margin-top:6px;"><strong style="color:var(--p)">Sk8tr</strong> (genai genesis) - extracts youtube clips from pro programs and scores classified jumps with nyt-style visuals.</div>
+  </div>
+
+  <div class="m-card">
+    <div class="m-title">events this term (9+)</div>
+    <div>
+      <span class="m-pill">meraki</span>
+      <span class="m-pill">loveable meetup</span>
+      <span class="m-pill">cursor meetup</span>
+      <span class="m-pill">agent summit</span>
+      <span class="m-pill">github copilot days</span>
+      <span class="m-pill">red hat day</span>
+      <span class="m-pill">elastic day</span>
+    </div>
+    <div class="m-row" style="margin-top:8px;">
+      <img class="m-img" src="./images/Meraki.png" alt="Meraki event">
+      <img class="m-img" src="./images/AI Summit.jpeg" alt="Agent Summit event">
+    </div>
+  </div>
+
+  <div class="m-card">
+    <div class="m-title">side quests</div>
+    <div class="m-list">
+      <div class="m-li">no hints used @ the hardest 60-min escape room at trapped on queens street west</div>
+      <div class="m-li">went to a trampoline park and escaped leg day</div>
+      <div class="m-li">ate a boat load of sushi</div>
+    </div>
+    <div class="m-row" style="margin-top:8px;">
+      <img class="m-img" src="./images/Trampoline.jpg" alt="Trampoline side quest">
+      <img class="m-img" src="./images/Sushi.png" alt="Sushi side quest">
+    </div>
+  </div>
+
+  <div class="m-card">
+    <div class="m-title">looking back</div>
+    <div class="m-p">this term shifted how i think about <span style="color:var(--p)">building</span>. it’s not just about writing code anymore - it’s also about <span style="color:var(--p)">meeting new people</span>, putting yourself out there, and learning in public.</div>
+  </div>
+
+  <div class="m-card">
+    <div class="m-title">next term goals</div>
+    <div>
+      <span class="m-pill">learn more cloud infrastructure</span>
+      <span class="m-pill">build with embeddings + retrieval</span>
+      <span class="m-pill">dive deeper into ai inferencing</span>
+      <span class="m-pill">enjoy summerloo + do more side quests</span>
+    </div>
+  </div>
+</section>
+
 <script>
 // ─────────────────────────────────────────────────────────
 // CONTENT
@@ -298,7 +464,7 @@ const L = [
 
   <div>
     <div style="font-family:var(--script);font-size:clamp(20px,3.5vw,34px);color:rgba(255,255,255,.5);line-height:1.1;">Nuth's</div>
-    <div style="font-size:clamp(34px,5.5vw,60px);font-weight:900;line-height:1;color:#fff;letter-spacing:-.02em;">Term Recap <span style="color:var(--p);">🔥</span></div>
+    <div style="font-size:clamp(34px,5.5vw,60px);font-weight:900;line-height:1;color:#fff;letter-spacing:-.02em;">Term Recap <span style="color:var(--p);"></span></div>
   </div>
 
   <div style="display:flex;flex-wrap:wrap;gap:7px;justify-content:center;">
@@ -307,7 +473,7 @@ const L = [
     <span style="padding:5px 14px;border-radius:9999px;background:var(--pd);border:1px solid var(--pb);font-size:11px;font-weight:600;">🎟 9 events</span>
   </div>
 
-  <p style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(162,156,223,.28);">drag → or ← to flip</p>
+  <p style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(162,156,223,.28);">drag left or right, or use the arrow keys</p>
 </div>`,
 
 // ── L1 PROJECTS & LEADERSHIP ──────────────────────────────────
@@ -372,8 +538,8 @@ const L = [
       <div class="polar-cap">Cursor Meetup</div>
     </div>
     <div class="polar" style="transform:rotate(2deg);margin-top:4px;">
-      <div class="polar-ph"><img class="fit-contain" src="./images/AI Summit.jpeg" alt="AI Summit"></div>
-      <div class="polar-cap">AI Summit</div>
+      <div class="polar-ph"><img class="fit-contain" src="./images/AI Summit.jpeg" alt="Agent Summit"></div>
+      <div class="polar-cap">Agent Summit</div>
     </div>
     <div class="polar" style="transform:rotate(-1.5deg);margin-top:2px;">
       <div class="polar-ph"><img class="fit-contain" src="./images/GithubCopilot.png" alt="Github Copilot"></div>
@@ -445,12 +611,14 @@ const R = [
 
 // ── R0 RBC ─────────────────────────────────────────────────────
 `<div style="height:100%;display:flex;flex-direction:column;position:relative;overflow:hidden;">
-  <div class="polar" style="position:absolute;right:14px;bottom:-18px;width:88px;transform:rotate(4deg);z-index:0;opacity:.92;">
+  <div class="polar" style="position:absolute;right:116px;bottom:18px;width:94px;transform:rotate(-6deg);z-index:0;opacity:.9;">
+    <div class="polar-ph" style="min-height:60px;"><img class="rbc-photo" src="./images/PhotoWManager.JPG" alt="RBC with manager"></div>
+  </div>
+  <div class="polar" style="position:absolute;right:12px;bottom:2px;width:96px;transform:rotate(4deg);z-index:0;opacity:.92;">
     <div class="polar-ph" style="min-height:62px;"><img class="rbc-photo" src="./images/RBC.png" alt="RBC memory"></div>
-    <div class="polar-cap">RBC Co-op</div>
   </div>
   <div class="tape t-t" style="top:6px;left:50%;margin-left:-26px;width:52px;transform:rotate(2deg);"></div>
-  <div style="height:100%;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1;">
+  <div style="height:100%;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1;transform:translateY(-30px);">
     <span class="sl">Co-op · Jan – Apr 2026</span>
     <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:16px;align-items:start;overflow:hidden;">
 
@@ -458,7 +626,7 @@ const R = [
       <div style="display:flex;flex-direction:column;gap:10px;">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px;">
           <div class="sticker" style="width:38px;height:38px;background:rgba(0,82,136,0.25);font-size:20px;">🏦</div>
-          <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.4);line-height:1.3;">Royal Bank<br>of Canada</div>
+          <div style="font-size:12px;font-weight:700;color:rgba(255,255,255,.4);line-height:1.3;white-space:nowrap;">Royal Bank of Canada</div>
         </div>
         <div style="font-size:clamp(18px,2.8vw,28px);font-weight:900;line-height:1.15;">Software<br>Development<br>Engineer</div>
         <div style="font-size:clamp(13px,2vw,20px);font-weight:700;color:var(--p);">@ RBC Insurance</div>
