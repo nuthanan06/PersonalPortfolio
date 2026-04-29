@@ -1658,16 +1658,6 @@ html, body {
     justify-content: flex-end;
   }
 
-  .md\:gap-x-16{
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
-  }
-
-  .md\:gap-x-8{
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
-  }
-
   .md\:gap-x-12{
     -moz-column-gap: 3rem;
          column-gap: 3rem;
