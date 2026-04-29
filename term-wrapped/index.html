@@ -220,9 +220,20 @@
             border-radius:8px;
             padding:8px 10px;
         }
+        .m-img-zoom {
+            object-fit:contain;
+            object-position:center;
+            background:rgba(8,7,18,.6);
+            padding:6px;
+        }
+        .m-img-rbc {
+            object-fit:cover;
+            object-position:center 32%;
+            padding:0;
+        }
 
         /* ── scrapbook elements ── */
-        /* washi tape — diagonal stripe pattern */
+        /* washi tape - diagonal stripe pattern */
         .tape {
             position:absolute;
             height:12px;
@@ -369,7 +380,7 @@
 <section id="mobile-recap">
   <div class="m-card">
     <div class="m-title">winter 2026</div>
-    <div class="m-h">term recap 🔥</div>
+  <div class="m-h">Term Recap</div>
     <div>
       <span class="m-pill">1 co-op</span>
       <span class="m-pill">4 hackathons</span>
@@ -379,36 +390,43 @@
 
   <div class="m-card">
     <div class="m-title">co-op @ rbc</div>
-    <div class="m-p"><strong style="color:var(--p)">software development engineer</strong><br>jan - apr 2026</div>
+    <div class="m-p"><strong style="color:var(--p)">Software Development Engineer</strong><br>Jan - Apr 2026</div>
     <div class="m-list">
-      <div class="m-li">built langgraph ai tooling for jira requirement/test-case generation</div>
-      <div class="m-li">co-developed ssl/tls renewal automation across 4 internal services</div>
-      <div class="m-li">reduced regression test execution time by 50% on an 8,100-line bdd framework</div>
+      <div class="m-li">Built LangGraph AI tooling for JIRA requirement/test-case generation.</div>
+      <div class="m-li">Co-developed SSL/TLS renewal automation across 4 internal services.</div>
+      <div class="m-li">Reduced regression test execution time by 50% on an 8,100-line BDD framework.</div>
     </div>
     <div class="m-row" style="margin-top:8px;">
-      <img class="m-img" src="./images/RBC.png" alt="RBC memory">
-      <img class="m-img" src="./images/PhotoWManager.JPG" alt="RBC team photo">
+      <img class="m-img m-img-rbc" src="./images/RBC.png" alt="RBC memory">
+      <img class="m-img m-img-rbc" src="./images/PhotoWManager.JPG" alt="RBC team photo">
     </div>
   </div>
 
   <div class="m-card">
     <div class="m-title">hackathon season</div>
-    <div class="m-p"><strong style="color:var(--p)">ReMap</strong> (uoft hacks viii) - ai urban planning through ecological + indigenous perspectives.</div>
-    <div class="m-p" style="margin-top:6px;"><strong style="color:var(--p)">QuickCart</strong> (deltahacks xii) - real-time cv grocery cart using clip with fast stripe checkout.</div>
-    <div class="m-p" style="margin-top:6px;"><strong style="color:var(--p)">TwoTabs</strong> (listenhacks) - beginner-friendly music production in two tabs with chat + hand gestures. <strong>Second Place.</strong></div>
-    <div class="m-p" style="margin-top:6px;"><strong style="color:var(--p)">Sk8tr</strong> (genai genesis) - extracts youtube clips from pro programs and scores classified jumps with nyt-style visuals.</div>
+    <div class="m-p"><strong style="color:var(--p)">ReMap</strong> (UofT Hacks VIII) - AI urban planning through ecological + Indigenous perspectives.</div>
+    <img class="m-img m-img-zoom" style="margin-top:8px;height:132px;" src="./images/remap.png" alt="ReMap project image">
+    <div style="height:1px;background:rgba(162,156,223,.16);margin:8px 0 0;"></div>
+    <div class="m-p" style="margin-top:6px;"><strong style="color:var(--p)">QuickCart</strong> (DeltaHacks XII) - Real-time CV grocery cart using CLIP with fast Stripe checkout.</div>
+    <img class="m-img m-img-zoom" style="margin-top:8px;height:132px;" src="./images/quickcart.png" alt="QuickCart project image">
+    <div style="height:1px;background:rgba(162,156,223,.16);margin:8px 0 0;"></div>
+    <div class="m-p" style="margin-top:6px;"><strong style="color:var(--p)">TwoTabs</strong> (ListenHacks) - Beginner-friendly music production in two tabs with chat + hand gestures. <strong>Second Place.</strong></div>
+    <img class="m-img m-img-zoom" style="margin-top:8px;height:132px;" src="./images/TwoTabs.png" alt="TwoTabs project image">
+    <div style="height:1px;background:rgba(162,156,223,.16);margin:8px 0 0;"></div>
+    <div class="m-p" style="margin-top:6px;"><strong style="color:var(--p)">Sk8tr</strong> (GenAI Genesis) - Extracts YouTube clips from pro programs and scores classified jumps with NYT-style visuals.</div>
+    <img class="m-img m-img-zoom" style="margin-top:8px;height:132px;" src="./images/Sk8tr.png" alt="Sk8tr project image">
   </div>
 
   <div class="m-card">
     <div class="m-title">events this term (9+)</div>
     <div>
-      <span class="m-pill">meraki</span>
-      <span class="m-pill">loveable meetup</span>
-      <span class="m-pill">cursor meetup</span>
-      <span class="m-pill">agent summit</span>
-      <span class="m-pill">github copilot days</span>
-      <span class="m-pill">red hat day</span>
-      <span class="m-pill">elastic day</span>
+      <span class="m-pill">Meraki</span>
+      <span class="m-pill">Loveable Meetup</span>
+      <span class="m-pill">Cursor Meetup</span>
+      <span class="m-pill">Agent Summit</span>
+      <span class="m-pill">GitHub Copilot Days</span>
+      <span class="m-pill">Red Hat Day</span>
+      <span class="m-pill">Elastic Day</span>
     </div>
     <div class="m-row" style="margin-top:8px;">
       <img class="m-img" src="./images/Meraki.png" alt="Meraki event">
@@ -419,9 +437,9 @@
   <div class="m-card">
     <div class="m-title">side quests</div>
     <div class="m-list">
-      <div class="m-li">no hints used @ the hardest 60-min escape room at trapped on queens street west</div>
-      <div class="m-li">went to a trampoline park and escaped leg day</div>
-      <div class="m-li">ate a boat load of sushi</div>
+      <div class="m-li">No hints used at the hardest 60-minute escape room at Trapped on Queen Street West.</div>
+      <div class="m-li">Went to a trampoline park and escaped leg day.</div>
+      <div class="m-li">Ate a boat load of sushi.</div>
     </div>
     <div class="m-row" style="margin-top:8px;">
       <img class="m-img" src="./images/Trampoline.jpg" alt="Trampoline side quest">
@@ -431,16 +449,16 @@
 
   <div class="m-card">
     <div class="m-title">looking back</div>
-    <div class="m-p">this term shifted how i think about <span style="color:var(--p)">building</span>. it’s not just about writing code anymore - it’s also about <span style="color:var(--p)">meeting new people</span>, putting yourself out there, and learning in public.</div>
+    <div class="m-p">This term shifted how I think about <span style="color:var(--p)">building</span>. It is not just about writing code anymore - it is also about <span style="color:var(--p)">meeting new people</span>, putting yourself out there, and learning in public.</div>
   </div>
 
   <div class="m-card">
     <div class="m-title">next term goals</div>
     <div>
-      <span class="m-pill">learn more cloud infrastructure</span>
-      <span class="m-pill">build with embeddings + retrieval</span>
-      <span class="m-pill">dive deeper into ai inferencing</span>
-      <span class="m-pill">enjoy summerloo + do more side quests</span>
+      <span class="m-pill">Learn more cloud infrastructure</span>
+      <span class="m-pill">Build with embeddings + retrieval</span>
+      <span class="m-pill">Dive deeper into AI inferencing</span>
+      <span class="m-pill">Enjoy Summerloo + do more side quests</span>
     </div>
   </div>
 </section>
@@ -479,7 +497,7 @@ const L = [
 // ── L1 PROJECTS & LEADERSHIP ──────────────────────────────────
 `<div style="height:100%;display:flex;flex-direction:column;position:relative;overflow:hidden;">
   <div class="tape t-k" style="top:6px;left:50%;margin-left:-26px;width:52px;transform:rotate(2deg);"></div>
-  <span class="sl">Beyond the 9–5</span>
+  <span class="sl">Beyond the 9-5</span>
   <div style="font-size:clamp(20px,3vw,32px);font-weight:900;margin-bottom:12px;line-height:1.1;">Projects &amp; <span style="color:var(--p);">Leadership</span></div>
   <div style="flex:1;display:flex;flex-direction:column;gap:8px;overflow:hidden;">
     <div class="scard" style="transform:rotate(-0.8deg);">
@@ -655,7 +673,7 @@ const R = [
         </div>
         <div class="ach" style="transform:rotate(-.3deg);">
           <span class="ach-i">⚡</span>
-          <p class="ach-t">AI <strong>data compliance platform</strong> — <strong>5 days → 5 mins</strong></p>
+          <p class="ach-t">AI <strong>data compliance platform</strong> - <strong>5 days to 5 mins</strong></p>
         </div>
         <div class="ach" style="transform:rotate(.4deg);">
           <span class="ach-i">🚀</span>
@@ -723,7 +741,7 @@ const R = [
       from my term at rbc to hackathons and events, i learned to step into rooms where i’m the least experienced, learn fast, and <span style="color:var(--p);">ship + deploy quickly</span>.
     </p>
     <p style="font-size:clamp(12px,1.5vw,14px);font-weight:500;color:rgba(255,255,255,.38);position:relative;z-index:1;margin:0;">still learning, still building. ✨</p>
-    <p style="font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(162,156,223,.28);position:relative;z-index:1;margin:0;">— Nuthanan</p>
+    <p style="font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(162,156,223,.28);position:relative;z-index:1;margin:0;">Nuthanan</p>
   </div>
 </div>`,
 
