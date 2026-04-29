@@ -343,7 +343,7 @@ let projects = {
         categoryColor: "#7C3AED", // purple
         languages: "Sonnet 3.5, FastAPI, Gemini 3.5, LangGraph, MapBoxGL, MongoDB, Next.js, OpenAI, Python, React, TailwindCSS", 
         description: "An interactive planning tool that helps urban planners explore development through an ecological and Indigenous lens using AI agents.",
-        githubLink: "https://github.com/hannatonthat/uofthacks-2026", 
+        githubLink: "https://github.com/hannatonthat/remap-uofthacks2026", 
         source: "./images/remap.png"
     },
     quickcart: {
@@ -352,8 +352,8 @@ let projects = {
         hackathon: "DeltaHacks XII",
         category: "Full Stack",
         categoryColor: "#7C3AED", // purple
-        languages: "React Native, Expo Router, Firebase, Typescript, Flask, YOLOv8, OpenCV, MongoDB, CLIP, Stripe API", 
-        description: "A mobile app that uses computer vision to track grocery items in real time and streamlines checkout with Firebase syncing and Stripe payments.",
+        languages: "React Native, Expo Router, Firebase, TypeScript, JavaScript, Flask, YOLOv8, OpenCV, MongoDB, CLIP, Stripe API",
+        description: "A mobile app that uses CLIP-powered computer vision to track grocery items in real time and streamlines checkout with Firebase syncing and Stripe payments.",
         githubLink: "https://github.com/nuthanan06/quickcart", 
         source: "./images/quickcart.png"
     },
@@ -400,6 +400,28 @@ let projects = {
         description: "Summarizes stories from speech or text using AI. Built with Next.js, Flask, and Firebase.",
         githubLink: "https://github.com/JenniferYu-8/teabag/tree/main", 
         source: "./images/teabag.png"
+    },
+    listenhacks: {
+        title: "TwoTabs",
+        year: "2026",
+        hackathon: "ListenHacks (2nd Place)",
+        category: "Full Stack",
+        categoryColor: "#7C3AED",
+        languages: "JavaScript, Python, HTML, CSS, Gemini, ElevenLabs",
+        description: "Cost-free, beginner-friendly music production in two tabs: chat with Gemini + ElevenLabs, then mix tracks live with computer-vision hand controls.",
+        githubLink: "https://github.com/nur4o4/listenhacks",
+        source: "./images/TwoTabs.png"
+    },
+    sk8tr: {
+        title: "Sk8tr",
+        year: "2026",
+        hackathon: "GenAI Genesis",
+        category: "AI/ML",
+        categoryColor: "#10B981",
+        languages: "Python, TypeScript, TensorFlow, MediaPipe, YOLO11, LangChain, FastAPI, Next.js, OpenCV, Twelve Labs",
+        description: "LangChain skating copilot that extracts YouTube clips from pro programs and scores classified jumps with NYT-style visuals, using a fine-tuned YOLO11 jump classifier.",
+        githubLink: "https://github.com/sylviax28/sk8tr",
+        source: "./images/Sk8tr.png"
     },
         skinCancerDetection: {
             title: "AI Skin Cancer Detection",
@@ -497,11 +519,15 @@ function renderProjects(year = 'All', category = 'All') {
             'quickcart',
             'skinCancerDetection'
         ];
-        const topSet = new Set(topProjectKeys.map(key => projects[key]?.title?.toLowerCase().replace(/\s/g, '')));
+        const topKeySet = new Set(topProjectKeys);
         const topProjects = topProjectKeys
             .map(key => projects[key])
             .filter(p => p && ((year === 'All' || p.year === year) && (category === 'All' || p.category === category)));
-        const restProjects = Object.values(projects).filter(p => !topSet.has(p.title.toLowerCase().replace(/\s/g, '')) && ((year === 'All' || p.year === year) && (category === 'All' || p.category === category)));
+        const restOrder = { listenhacks: 0, sk8tr: 1, investie: 2, teabag: 3 };
+        const restProjects = Object.entries(projects)
+            .filter(([key, p]) => !topKeySet.has(key) && ((year === 'All' || p.year === year) && (category === 'All' || p.category === category)))
+            .sort(([a], [b]) => (restOrder[a] ?? 999) - (restOrder[b] ?? 999))
+            .map(([, p]) => p);
         // Render top projects (big cards)
         if (topProjects.length > 0) {
             string += `<div class="flex flex-col gap-8 w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto mt-8 justify-between">`;
